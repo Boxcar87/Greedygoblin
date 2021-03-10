@@ -664,10 +664,10 @@ ItemDisplay[NMAG 9ws !RW CLVL>59 SOCKETS<3]:
 ItemDisplay[NMAG 7ws !RW CLVL>59 SOCKETS<3]:
 
 //Charms
-ItemDisplay[cm1]: %RED%Ø %BLUE%Small Charm %RED%Ø
-ItemDisplay[cm2 CLVL>59]:
-ItemDisplay[cm2 CLVL<60]: %BLUE%Large Charm
-ItemDisplay[cm3]: %RED%Ø %BLUE%Grand Charm %RED%Ø
+ItemDisplay[cm1 !ID]: %RED%Ø %BLUE%Small Charm %RED%Ø
+ItemDisplay[cm2 !IDCLVL>59]:
+ItemDisplay[cm2 !ID CLVL<60]: %BLUE%Large Charm
+ItemDisplay[cm3 !ID]: %RED%Ø %BLUE%Grand Charm %RED%Ø
 
 ////Runewords
 
