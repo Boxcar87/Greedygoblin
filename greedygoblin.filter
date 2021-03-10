@@ -6,7 +6,7 @@ ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<70)]:
 ItemDisplay[GOLD<5000 CLVL>69]:
 
 //Potions
-ItemDisplay[rvl]: %PURPLE%R %WHITE%FULL
+ItemDisplay[rvl]: %PURPLE%R %WHITE%Full
 ItemDisplay[hp5]: %RED%H%WHITE%Super
 ItemDisplay[mp5]: %BLUE%M%WHITE%Super
 ItemDisplay[rvs]: %PURPLE%r %WHITE%35%
@@ -109,20 +109,20 @@ ItemDisplay[r16]: %TAN%io 16
 ItemDisplay[r17]: %TAN%Lum 17
 ItemDisplay[r18]: %TAN%Ko 18
 ItemDisplay[r19]: %TAN%Fal 19
-ItemDisplay[r20]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%LEM 20%RED% Ø
-ItemDisplay[r21]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%PUL 21%RED% Ø
-ItemDisplay[r22]: %NOTIFY-PURPLE%%RED%ØØ %PURPLE%UM 22%RED% ØØ
-ItemDisplay[r23]: %NOTIFY-PURPLE%%RED%ØØ %PURPLE%MAL 23%RED% ØØ
-ItemDisplay[r24]: %NOTIFY-PURPLE%%RED%ØØØ %PURPLE%IST 24%RED% ØØØ
-ItemDisplay[r25]: %NOTIFY-PURPLE%%RED%ØØØØ %PURPLE%GUL 25%RED% ØØØØ
-ItemDisplay[r26]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØ %PURPLE%VEX 26%RED% ØØØØØØØØØ
-ItemDisplay[r27]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØ %PURPLE%OHM 27%RED% ØØØØØØØØØ
-ItemDisplay[r28]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØØØØØØØ %PURPLE%LO 28%RED% ØØØØØØØØØØØØØØØ
-ItemDisplay[r29]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØØØØØØØ  %PURPLE%SUR 29%RED% ØØØØØØØØØØØØØØØ
-ItemDisplay[r30]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØØØØØØØØØØ %PURPLE%BER 30%RED% ØØØØØØØØØØØØØØØØØØ
-ItemDisplay[r31]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØØØØØØØØØØ %PURPLE%JAH 31%RED% ØØØØØØØØØØØØØØØØØØ
-ItemDisplay[r32]: %NOTIFY-PURPLE%%RED%¤ØØØØØØØØØ %PURPLE%CHAM 32%RED% ØØØØØØØØØ
-ItemDisplay[r33]: %NOTIFY-PURPLE%%RED%ØØØØØØØØØØØØØØØ %PURPLE%ZOD 33%RED% ØØØØØØØØØØØØØØØ
+ItemDisplay[r20]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%LEM 20%RED% Ø
+ItemDisplay[r21]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%PUL 21%RED% Ø
+ItemDisplay[r22]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØ %PURPLE%UM 22%RED% ØØ
+ItemDisplay[r23]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØ %PURPLE%MAL 23%RED% ØØ
+ItemDisplay[r24]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØ %PURPLE%IST 24%RED% ØØØ
+ItemDisplay[r25]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØ %PURPLE%GUL 25%RED% ØØØØ
+ItemDisplay[r26]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØ %PURPLE%VEX 26%RED% ØØØØØØØØØ
+ItemDisplay[r27]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØ %PURPLE%OHM 27%RED% ØØØØØØØØØ
+ItemDisplay[r28]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØØØØØØØ %PURPLE%LO 28%RED% ØØØØØØØØØØØØØØØ
+ItemDisplay[r29]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØØØØØØØ  %PURPLE%SUR 29%RED% ØØØØØØØØØØØØØØØ
+ItemDisplay[r30]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØØØØØØØØØØ %PURPLE%BER 30%RED% ØØØØØØØØØØØØØØØØØØ
+ItemDisplay[r31]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØØØØØØØØØØ %PURPLE%JAH 31%RED% ØØØØØØØØØØØØØØØØØØ
+ItemDisplay[r32]: %NOTIFY-PURPLE%%SOUND-3000%%RED%¤ØØØØØØØØØ %PURPLE%CHAM 32%RED% ØØØØØØØØØ
+ItemDisplay[r33]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØØØØØØØØ %PURPLE%ZOD 33%RED% ØØØØØØØØØØØØØØØ
 
 //Misc quest
 ItemDisplay[bbb]: %TAN%%NAME%
@@ -210,9 +210,9 @@ ItemDisplay[skz]: %ORANGE%P SKULL
 //Helms
 
 //Griffon's Eye
-ItemDisplay[UNI !ETH !ID ci3]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Griffon Eye %RED%Ø
+ItemDisplay[UNI !ETH !ID ci3]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Griffon Eye %RED%Ø
 //Shako
-ItemDisplay[UNI !ETH !ID uap]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Harlequin Crest %RED%Ø
+ItemDisplay[UNI !ETH !ID uap]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Harlequin Crest %RED%Ø
 //Crown of Ages
 ItemDisplay[UNI !ETH !ID urn]: %PURPLE%Crown of Ages
 //Andariel's Visage
@@ -220,15 +220,15 @@ ItemDisplay[UNI !ETH !ID usk]: %PURPLE%Andariel Visage
 //Vampire Gaze
 ItemDisplay[UNI !ETH !ID xh9]: %PURPLE%Vampire Gaze
 //Arreat's Face
-ItemDisplay[UNI !ETH !ID baa]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Arreat Face %RED%Ø
+ItemDisplay[UNI !ETH !ID baa]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Arreat Face %RED%Ø
 //Jalal's Mane
-ItemDisplay[UNI !ETH !ID dra]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Jalal Mane %RED%Ø
+ItemDisplay[UNI !ETH !ID dra]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Jalal Mane %RED%Ø
 //Ravenlore
 ItemDisplay[UNI !ETH !ID dre]: %GOLD%Ravenlore
 //Guillaume's Face
 ItemDisplay[SET !ETH !ID xhm]: %GREEN%Guillaume Face
 //STEEL SHADE
-ItemDisplay[UNI !ID ulm]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Steel Shade %RED%Ø
+ItemDisplay[UNI !ID ulm]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Steel Shade %RED%Ø
 //Trangs Helm
 ItemDisplay[SET !ETH !ID uh9]: %GREEN%Trang-Oul's Helm
 //Stealskull
@@ -237,7 +237,7 @@ ItemDisplay[UNI !ETH !ID xlm]: %GOLD%Stealskull
 //Armor
 
 //Viper Magi
-ItemDisplay[UNI !ETH !ID xea]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Skin of the Vipermagi %RED%Ø
+ItemDisplay[UNI !ETH !ID xea]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Skin of the Vipermagi %RED%Ø
 //Naj's Chest
 ItemDisplay[SET !ETH !ID ult]: %GREEN% Naj Chest
 //Duriel's Shell
@@ -251,9 +251,9 @@ ItemDisplay[UNI !ETH !ID uar]: %PURPLE%Tyrael Might
 //Guardian Angel
 ItemDisplay[UNI !ETH !ID xlt]: %PURPLE%Guardian Angel
 //Tal Rasha Armour
-ItemDisplay[SET !ETH !ID uth]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Tal Armour %RED%Ø
+ItemDisplay[SET !ETH !ID uth]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Tal Armour %RED%Ø
 //Immortal King Armour
-ItemDisplay[SET !ETH !ID uar]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%IK Armour %RED%Ø
+ItemDisplay[SET !ETH !ID uar]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%IK Armour %RED%Ø
 
 
 //Gloves
@@ -268,7 +268,7 @@ ItemDisplay[UNI !ETH !ID umg]: %GOLD%Soul Drainer
 //Belts
 
 //Arachnid Mesh
-ItemDisplay[UNI !ETH !ID ulc]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%%NAME% %RED%Ø
+ItemDisplay[UNI !ETH !ID ulc]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%%NAME% %RED%Ø
 //Verdungo's Hearty Cord
 ItemDisplay[UNI !ETH !ID umc]: %PURPLE%Verdungo
 //String of Ears
@@ -276,13 +276,13 @@ ItemDisplay[UNI !ETH !ID zlb]: %PURPLE%String of Ears
 //Razortail
 ItemDisplay[UNI !ETH !ID zvb]: %PURPLE%Razortail
 //Thundergod's Vigor
-ItemDisplay[UNI !ETH !ID zhb]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Thundergods Vigor %RED%Ø
+ItemDisplay[UNI !ETH !ID zhb]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Thundergods Vigor %RED%Ø
 
 
 //Boots
 
 //War Traveler
-ItemDisplay[UNI !ETH !ID xtb]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%War Traveler %RED%Ø
+ItemDisplay[UNI !ETH !ID xtb]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%War Traveler %RED%Ø
 //Shadow Dancer
 ItemDisplay[UNI !ETH !ID uhb]: %GOLD%Shadow Dancer
 //Sandstorm Trek
@@ -301,7 +301,7 @@ ItemDisplay[UNI !ETH !ID 7gw]: %PURPLE%Death Web
 //Eschuta's
 ItemDisplay[UNI !ETH !ID obc]: %PURPLE%Eschuta
 //Windforce
-ItemDisplay[UNI !ID 6lw]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Windfore %RED%Ø
+ItemDisplay[UNI !ID 6lw]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Windfore %RED%Ø
 //Reaper's Toll
 ItemDisplay[UNI !ETH !ID 7s8]: %GOLD%Reaper Toll
 //ETH Reaper's Toll
@@ -330,9 +330,9 @@ ItemDisplay[UNI !ID 7ls]: %GOLD%Frostwind
 //Shields
 
 //Stormshield
-ItemDisplay[UNI !ETH !ID uit]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Stormshield %RED%Ø
+ItemDisplay[UNI !ETH !ID uit]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Stormshield %RED%Ø
 //Homunculus
-ItemDisplay[UNI !ETH !ID nea]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Homunculus %RED%Ø
+ItemDisplay[UNI !ETH !ID nea]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Homunculus %RED%Ø
 //Herald of Zakarum
 ItemDisplay[UNI !ETH !ID pa9]: %PURPLE%Herald of Zakarum 
 //Darkforce Spawn
@@ -347,11 +347,11 @@ ItemDisplay[UNI !ETH !ID xts]: %GOLD%Radament Sphere
 ItemDisplay[UNI !ETH !ID uml]: %GOLD%Blackoak
 
 //Jewelry
-ItemDisplay[UNI !ID rin]: %NOTIFY-PURPLE%%RED%ØØØØØØØØ %PURPLE%Ring %RED%ØØØØØØØØ
-ItemDisplay[UNI !ID amu]: %NOTIFY-PURPLE%%RED%ØØØØØØØØ %PURPLE%Amulet %RED%ØØØØØØØØ
-ItemDisplay[UNI !ID jew]: %NOTIFY-PURPLE%%RED%Ø %PURPLE%Rainbow Facet %RED%Ø
+ItemDisplay[UNI !ID rin]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØ %PURPLE%Ring %RED%ØØØØØØØØ
+ItemDisplay[UNI !ID amu]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØ %PURPLE%Amulet %RED%ØØØØØØØØ
+ItemDisplay[UNI !ID jew]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Rainbow Facet %RED%Ø
 ItemDisplay[UNI !ID cm3]: %GOLD%Gheed Charm
-ItemDisplay[SET !ID amu]: %NOTIFY-PURPLE%%RED%Ø %GREEN%Amulet %RED%Ø
+ItemDisplay[SET !ID amu]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %GREEN%Amulet %RED%Ø
 
 //UNIQUE&SET Eth/Socket Catchall
 ItemDisplay[UNI ETH SOCK>0 !ID]: ETH %NAME% [%SOCKETS%]
