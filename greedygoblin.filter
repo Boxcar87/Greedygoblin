@@ -391,7 +391,7 @@ ItemDisplay[MAG EQ5 !ID !ETH CLVL<20]: %BLUE%%NAME%
 ItemDisplay[MAG EQ6 !ID !ETH CLVL<20]: %BLUE%%NAME%
 ItemDisplay[MAG EQ7 !ID !ETH]: %BLUE%%NAME%
 //Remove everything else
-ItemDisplay[NMAG ARMOR !ID]:
+ItemDisplay[MAG ARMOR !ID]:
 
 //Weapons are shopfood
 ItemDisplay[MAG WEAPON CLVL<60]: %BLUE%%NAME%
