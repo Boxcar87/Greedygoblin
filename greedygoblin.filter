@@ -1,13 +1,9 @@
 //ØØØØØØØØØ A Filter for greedy goblins
 
-//Test
-
-ItemDisplay[UNI 9sb ID]: %NAME%{Testing this %BLUE%out}
-
 //Gold
 ItemDisplay[GOLD<200 CLVL<20]:
 ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<70)]:
-ItemDisplay[GOLD<5000 CLVL>69]:
+ItemDisplay[GOLD<5000]:
 
 //Potions
 ItemDisplay[rvl]: %PURPLE%R %WHITE%Full
@@ -18,18 +14,18 @@ ItemDisplay[hp1 CLVL<15]: %RED%H%WHITE%Minor
 ItemDisplay[hp2 CLVL<18]: %RED%H%WHITE%Light
 ItemDisplay[hp3 CLVL<24]: %RED%H%WHITE%Regular
 ItemDisplay[hp4 CLVL<60]: %RED%H%WHITE%Greater
-ItemDisplay[hp1 CLVL>14]:
-ItemDisplay[hp2 CLVL>17]:
-ItemDisplay[hp3 CLVL>23]:
-ItemDisplay[hp4 CLVL>59]: 
+ItemDisplay[hp1]:
+ItemDisplay[hp2]:
+ItemDisplay[hp3]:
+ItemDisplay[hp4]: 
 ItemDisplay[mp1 CLVL<15]: %BLUE%M%WHITE%Minor
 ItemDisplay[mp2 CLVL<20]: %BLUE%M%WHITE%Light
 ItemDisplay[mp3 CLVL<26]: %BLUE%M%WHITE%Regular
 ItemDisplay[mp4 CLVL<60]: %BLUE%M%WHITE%Greater
-ItemDisplay[mp1 CLVL>14]:
-ItemDisplay[mp2 CLVL>19]:
-ItemDisplay[mp3 CLVL>25]:
-ItemDisplay[mp4 CLVL>59]: 
+ItemDisplay[mp1]:
+ItemDisplay[mp2]:
+ItemDisplay[mp3]:
+ItemDisplay[mp4]: 
 
 //Essences
 ItemDisplay[tes]: %GOLD%Suffering [Andariel]
@@ -87,7 +83,7 @@ ItemDisplay[ops]:
 ItemDisplay[gps]:
 ItemDisplay[gpl]:
 ItemDisplay[vps CLVL<60]: %GREEN%!%WHITE%Stamina
-ItemDisplay[vps CLVL>59]:
+ItemDisplay[vps]:
 
 //Arrows etc
 ItemDisplay[aq2 MAG !ID CLVL<20]: %BLUE%%NAME%
@@ -150,20 +146,13 @@ ItemDisplay[xyz]: %TAN%%NAME%
 //GEMS
 //1. Amethyst 2. Diamond 3. Emerald 4. Ruby 5. Sapphire 6. Topaz 7. Skull
 //Gems Chipped
-ItemDisplay[gcv CLVL<30]: chipped amethyst
-ItemDisplay[gcw CLVL<30]: chipped diamond
-ItemDisplay[gcg CLVL<30]: chipped emerald
-ItemDisplay[gcr CLVL<30]: chipped ruby
-ItemDisplay[gcb CLVL<30]: chipped sapphire
-ItemDisplay[gcy CLVL<30]: chipped topaz
-ItemDisplay[skc CLVL<30]: chipped skull
-ItemDisplay[gcv CLVL>29]:
-ItemDisplay[gcw CLVL>29]:
-ItemDisplay[gcg CLVL>29]:
-ItemDisplay[gcr CLVL>29]:
-ItemDisplay[gcb CLVL>29]:
-ItemDisplay[gcy CLVL>29]:
-ItemDisplay[skc CLVL>29]:
+ItemDisplay[gcv CLVL<20]: chipped amethyst
+ItemDisplay[gcw CLVL<20]: chipped diamond
+ItemDisplay[gcg CLVL<20]: chipped emerald
+ItemDisplay[gcr CLVL<20]: chipped ruby
+ItemDisplay[gcb CLVL<20]: chipped sapphire
+ItemDisplay[gcy CLVL<20]: chipped topaz
+ItemDisplay[skc CLVL<20]: chipped skull
 //Gems Flawed
 ItemDisplay[gfv CLVL<30]: flawed amethyst
 ItemDisplay[gfw CLVL<30]: flawed diamond
@@ -172,13 +161,6 @@ ItemDisplay[gfr CLVL<30]: flawed ruby
 ItemDisplay[gfb CLVL<30]: flawed sapphire
 ItemDisplay[gfy CLVL<30]: flawed topaz
 ItemDisplay[skf CLVL<30]: flawed skull
-ItemDisplay[gfv CLVL>29]:
-ItemDisplay[gfw CLVL>29]:
-ItemDisplay[gfg CLVL>29]:
-ItemDisplay[gfr CLVL>29]:
-ItemDisplay[gfb CLVL>29]:
-ItemDisplay[gfy CLVL>29]:
-ItemDisplay[skf CLVL>29]:
 //Gems Normal
 ItemDisplay[gsv CLVL<60]: amethyst
 ItemDisplay[gsw CLVL<60]: diamond
@@ -187,13 +169,6 @@ ItemDisplay[gsr CLVL<60]: ruby
 ItemDisplay[gsb CLVL<60]: sapphire
 ItemDisplay[gsy CLVL<60]: topaz
 ItemDisplay[sku CLVL<60]: skull
-ItemDisplay[gsv CLVL>59]:
-ItemDisplay[gsw CLVL>59]:
-ItemDisplay[gsg CLVL>59]:
-ItemDisplay[gsr CLVL>59]:
-ItemDisplay[gsb CLVL>59]:
-ItemDisplay[gsy CLVL>59]:
-ItemDisplay[sku CLVL>59]:
 //Gems flawless
 ItemDisplay[gzv]: %ORANGE%Amethyst
 ItemDisplay[glw]: %ORANGE%Diamond
@@ -210,6 +185,8 @@ ItemDisplay[gpr]: %ORANGE%P RUBY
 ItemDisplay[gpb]: %ORANGE%P SAPPHIRE
 ItemDisplay[gpy]: %ORANGE%P TOPAZ
 ItemDisplay[skz]: %ORANGE%P SKULL
+
+ItemDisplay[GEMLEVEL>0]:
 
 ////Uniques
 
@@ -358,24 +335,6 @@ ItemDisplay[UNI !ID amu]: %NOTIFY-PURPLE%%SOUND-3000%%RED%ØØØØØØØØ %PURP
 ItemDisplay[UNI !ID jew]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %PURPLE%Rainbow Facet %RED%Ø
 ItemDisplay[UNI !ID cm3]: %GOLD%Gheed Charm
 ItemDisplay[SET !ID amu]: %NOTIFY-PURPLE%%SOUND-3000%%RED%Ø %GREEN%Amulet %RED%Ø
-
-//UNIQUE&SET Eth/Socket Catchall
-ItemDisplay[UNI ETH SOCK>0 !ID]: ETH %NAME% [%SOCKETS%]
-ItemDisplay[SET ETH SOCK>0 !ID]: ETH %NAME% [%SOCKETS%]
-ItemDisplay[UNI ETH !ID]: ETH %NAME%
-ItemDisplay[SET ETH !ID]: ETH %NAME%
-ItemDisplay[UNI SOCK>0 !ID]: %NAME% [%SOCKETS%]
-ItemDisplay[SET SOCK>0 !ID]: %NAME% [%SOCKETS%]	
-ItemDisplay[UNI !ID]: %NAME%
-ItemDisplay[SET !ID]: %NAME%
-ItemDisplay[UNI ETH SOCK>0]: ETH %NAME% [%SOCKETS%]
-ItemDisplay[SET ETH SOCK>0]: ETH %NAME% [%SOCKETS%]
-ItemDisplay[UNI ETH]: ETH %NAME%
-ItemDisplay[SET ETH]: ETH %NAME%
-ItemDisplay[UNI SOCK>0]: %NAME% [%SOCKETS%]
-ItemDisplay[SET SOCK>0]: %NAME% [%SOCKETS%]
-ItemDisplay[UNI]: %NAME%
-ItemDisplay[SET]: %NAME%
 
 ////Rares
 
