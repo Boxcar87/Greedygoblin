@@ -144,48 +144,12 @@ ItemDisplay[tr2]: %TAN%%NAME%
 ItemDisplay[xyz]: %TAN%%NAME%
 
 //GEMS
-//1. Amethyst 2. Diamond 3. Emerald 4. Ruby 5. Sapphire 6. Topaz 7. Skull
-//Gems Chipped
-ItemDisplay[gcv CLVL<20]: chipped amethyst
-ItemDisplay[gcw CLVL<20]: chipped diamond
-ItemDisplay[gcg CLVL<20]: chipped emerald
-ItemDisplay[gcr CLVL<20]: chipped ruby
-ItemDisplay[gcb CLVL<20]: chipped sapphire
-ItemDisplay[gcy CLVL<20]: chipped topaz
-ItemDisplay[skc CLVL<20]: chipped skull
-//Gems Flawed
-ItemDisplay[gfv CLVL<30]: flawed amethyst
-ItemDisplay[gfw CLVL<30]: flawed diamond
-ItemDisplay[gfg CLVL<30]: flawed emerald
-ItemDisplay[gfr CLVL<30]: flawed ruby
-ItemDisplay[gfb CLVL<30]: flawed sapphire
-ItemDisplay[gfy CLVL<30]: flawed topaz
-ItemDisplay[skf CLVL<30]: flawed skull
-//Gems Normal
-ItemDisplay[gsv CLVL<60]: amethyst
-ItemDisplay[gsw CLVL<60]: diamond
-ItemDisplay[gsg CLVL<60]: emerald
-ItemDisplay[gsr CLVL<60]: ruby
-ItemDisplay[gsb CLVL<60]: sapphire
-ItemDisplay[gsy CLVL<60]: topaz
-ItemDisplay[sku CLVL<60]: skull
-//Gems flawless
-ItemDisplay[gzv]: %ORANGE%Amethyst
-ItemDisplay[glw]: %ORANGE%Diamond
-ItemDisplay[glg]: %ORANGE%Emerald
-ItemDisplay[glr]: %ORANGE%Ruby
-ItemDisplay[glb]: %ORANGE%Sapphire
-ItemDisplay[gly]: %ORANGE%Topaz
-ItemDisplay[skl]: %ORANGE%Skull
-//Gems Perfect
-ItemDisplay[gpv]: %ORANGE%P AMETHYST
-ItemDisplay[gpw]: %ORANGE%P DIAMOND
-ItemDisplay[gpg]: %ORANGE%P EMERALD
-ItemDisplay[gpr]: %ORANGE%P RUBY
-ItemDisplay[gpb]: %ORANGE%P SAPPHIRE
-ItemDisplay[gpy]: %ORANGE%P TOPAZ
-ItemDisplay[skz]: %ORANGE%P SKULL
 
+ItemDisplay[GEMLEVEL=5]:%RED%Ø %ORANGE%%GEMLEVEL% %RED%Ø
+ItemDisplay[GEMLEVEL>3]: %ORANGE%%GEMLEVEL%
+ItemDisplay[GEMLEVEL>2 CLVL<60]: %NAME%
+ItemDisplay[GEMLEVEL>1 CLVL<40]: %NAME%
+ItemDisplay[GEMLEVEL>0 CLVL<20]: %NAME%
 ItemDisplay[GEMLEVEL>0]:
 
 ////Uniques
