@@ -92,6 +92,8 @@ ItemDisplay[aq2 MAG !ID]:
 ItemDisplay[cq2 MAG !ID]:
 
 //RUNES
+ItemDisplay[cx5]: %NOTIFY-PURPLE%%SOUND-3000%%NAME%
+
 ItemDisplay[r01]: %TAN%El 1
 ItemDisplay[r02]: %TAN%Eld 2
 ItemDisplay[r03]: %TAN%Tir 3 
