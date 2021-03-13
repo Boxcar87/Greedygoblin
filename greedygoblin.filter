@@ -92,8 +92,6 @@ ItemDisplay[aq2 MAG !ID]:
 ItemDisplay[cq2 MAG !ID]:
 
 //RUNES
-ItemDisplay[cx5]: %NOTIFY-PURPLE%%SOUND-3000%%NAME%
-
 ItemDisplay[r01]: %TAN%El 1
 ItemDisplay[r02]: %TAN%Eld 2
 ItemDisplay[r03]: %TAN%Tir 3 
@@ -584,10 +582,10 @@ ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !INF ETH !RW (CLVL>19 AND CLVL<60) SOCKET
 ItemDisplay[NMAG WEAPON !RW]:
 
 //Charms //No large charms after 60
-ItemDisplay[cm1 !ID]: %RED%Ø %BLUE%Small Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %RED%Ø
-ItemDisplay[cm2 !ID CLVL<60]: %BLUE%Large Charm
-ItemDisplay[cm2 !ID]:
-ItemDisplay[cm3 !ID]: %RED%Ø %BLUE%Grand Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %RED%Ø
+ItemDisplay[MAG cm1 !ID]: %RED%Ø %BLUE%Small Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %RED%Ø
+ItemDisplay[MAG cm2 !ID CLVL<60]: %BLUE%Large Charm
+ItemDisplay[MAG cm2 !ID] :
+ItemDisplay[MAG cm3 !ID]: %RED%Ø %BLUE%Grand Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %RED%Ø
 
 ////Runewords
 
