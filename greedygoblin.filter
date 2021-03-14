@@ -382,9 +382,9 @@ ItemDisplay[MAG WEAPON !ID]:
 
 //Class  //Show Pally shields and 3OS Assassin claws with +3
 
-ItemDisplay[NMAG CL1 !RW !INF CLVL<60]:%NAME%
+ItemDisplay[NMAG CL1 !RW !INF CLVL<60]:%WHITE%%NAME%[%GRAY%%SOCKETS%%WHITE%]
 ItemDisplay[NMAG CL1 !RW]:
-ItemDisplay[NMAG CL2 !RW !INF CLVL<60]:%NAME%
+ItemDisplay[NMAG CL2 !RW !INF CLVL<60]:%WHITE%%NAME%[%GRAY%%SOCKETS%%WHITE%]
 ItemDisplay[NMAG CL2 !RW]:
 //Pally Shields
 ItemDisplay[SUP CL3 ELT !RW !ETH SOCKETS=4]: %RED%Ø %DARK_GREEN%%NAME%%WHITE%[%GRAY%%SOCKETS%%WHITE%] %RED%Ø {%TEAL%Spirit%WHITE%: %TAN%Tal%WHITE%|%TAN%Thul%WHITE%|%TAN%Ort%WHITE%|%TAN%Amn %NL%%TEAL%Pheonix%WHITE%: %TAN%Vex%WHITE%|%TAN%Vex%WHITE%|%TAN%Lo%WHITE%|%TAN%Jah}
