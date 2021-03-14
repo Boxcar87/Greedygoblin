@@ -382,7 +382,9 @@ ItemDisplay[MAG WEAPON !ID]:
 
 //Class  //Show Pally shields and 3OS Assassin claws with +3
 
+ItemDisplay[NMAG CL1 !RW !INF CLVL<60]:%NAME%
 ItemDisplay[NMAG CL1 !RW]:
+ItemDisplay[NMAG CL2 !RW !INF CLVL<60]:%NAME%
 ItemDisplay[NMAG CL2 !RW]:
 //Pally Shields
 ItemDisplay[SUP CL3 ELT !RW !ETH SOCKETS=4]: %RED%Ø %DARK_GREEN%%NAME%%WHITE%[%GRAY%%SOCKETS%%WHITE%] %RED%Ø {%TEAL%Spirit%WHITE%: %TAN%Tal%WHITE%|%TAN%Thul%WHITE%|%TAN%Ort%WHITE%|%TAN%Amn %NL%%TEAL%Pheonix%WHITE%: %TAN%Vex%WHITE%|%TAN%Vex%WHITE%|%TAN%Lo%WHITE%|%TAN%Jah}
@@ -398,6 +400,7 @@ ItemDisplay[NMAG CL3 !ELT !INF !RW !ETH CLVL<60 SOCKETS=3]: %WHITE%%NAME%[%GRAY%
 ItemDisplay[NMAG CL3 !ELT !INF !RW !ETH CLVL<60 SOCKETS=4]: %WHITE%%NAME%[%GRAY%%SOCKETS%%WHITE%] {%TEAL%Spirit%WHITE%: %TAN%Tal%WHITE%|%TAN%Thul%WHITE%|%TAN%Ort%WHITE%|%TAN%Amn}
 ItemDisplay[NMAG CL3 !RW]:
 //
+ItemDisplay[NMAG CL4 !RW !INF CLVL<60]:%NAME%
 ItemDisplay[NMAG CL4 !RW]:
 //Assassin Claws
 ItemDisplay[SUP CL5 ELT !ETH !RW SOCKETS=3 SK276=3]: %RED%Ø %DARK_GREEN%%NAME%%WHITE%[%GRAY%%SOCKETS%%WHITE%] %RED%Ø
@@ -413,13 +416,16 @@ ItemDisplay[NMAG !INF CL5 ELT !ETH !RW SOCKETS=3 SK277=3]: %DARK_GREEN%%NAME%%WH
 ItemDisplay[NMAG !INF CL5 ELT !ETH !RW SOCKETS=0 SK278=3]: %DARK_GREEN%%NAME%%WHITE%[%GRAY%%SOCKETS%%WHITE%]
 ItemDisplay[NMAG !INF CL5 ELT !ETH !RW SOCKETS=3 SK278=3]: %DARK_GREEN%%NAME%%WHITE%[%GRAY%%SOCKETS%%WHITE%] 
 ItemDisplay[NMAG CL5 !RW CLVL>59 PRICE>24999]: %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG CL5 CLVL>59 PRICE<25000]:
+ItemDisplay[NMAG CL5 !RW !INF CLVL<60]:%NAME%
+ItemDisplay[NMAG CL5 !RW]:
 //Sorceress shopfood
 ItemDisplay[NMAG CL6 !RW CLVL>59 PRICE>24999]: %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG CL6 CLVL>59 PRICE<25000]:
+ItemDisplay[NMAG CL6 !RW !INF CLVL<60]:%NAME%
+ItemDisplay[NMAG CL6 !RW]:
 //Amazon shopfood
 ItemDisplay[NMAG CL7 !bal !9b8 !7b8 CLVL>59 PRICE>24999]: %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG CL7 CLVL>59 PRICE<25000]:
+ItemDisplay[NMAG CL7 !RW !INF CLVL<60]:%NAME%
+ItemDisplay[NMAG CL7 !RW]:
 
 //Armor //Show Superior Armor/Shield bases >3OS Chest and Monarchs
 
