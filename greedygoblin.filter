@@ -72,7 +72,7 @@ ItemDisplay[wms]:
 ItemDisplay[yps]:
 ItemDisplay[tbk]: %WHITE%Tome of Town Portal
 ItemDisplay[ibk]: %WHITE%Tome of Identify
-ItemDisplay[key]: %PURPLE%!%Gray%Key
+ItemDisplay[key]: %PURPLE%!%GRAY%Key
 ItemDisplay[gpm]:
 ItemDisplay[opm]:
 ItemDisplay[opl]:
@@ -144,12 +144,74 @@ ItemDisplay[xyz]: %TAN%%NAME%
 
 //GEMS
 
-ItemDisplay[GEMLEVEL=5]:%RED%º %ORANGE%%GEMLEVEL% %RED%º
-ItemDisplay[GEMLEVEL>3]: %ORANGE%%GEMLEVEL%
-ItemDisplay[GEMLEVEL>2 CLVL<60]: %NAME%
-ItemDisplay[GEMLEVEL>1 CLVL<40]: %NAME%
-ItemDisplay[GEMLEVEL>0 CLVL<20]: %NAME%
-ItemDisplay[GEMLEVEL>0]:
+//ItemDisplay[GEMLEVEL=5]:%RED%º %ORANGE%%GEMLEVEL% %RED%º
+//ItemDisplay[GEMLEVEL>3]: %ORANGE%%GEMLEVEL%
+//ItemDisplay[GEMLEVEL>2 CLVL<60]: %NAME%
+//ItemDisplay[GEMLEVEL>1 CLVL<40]: %NAME%
+//ItemDisplay[GEMLEVEL>0 CLVL<20]: %NAME%
+//ItemDisplay[GEMLEVEL>0]:
+
+ItemDisplay[gpv]: %RED%º %ORANGE%Amethyst %RED%º
+ItemDisplay[gpw]: %RED%º %ORANGE%Diamond %RED%º
+ItemDisplay[gpg]: %RED%º %ORANGE%Emerald %RED%º
+ItemDisplay[gpr]: %RED%º %ORANGE%Ruby %RED%º
+ItemDisplay[gpb]: %RED%º %ORANGE%Sapphire %RED%º
+ItemDisplay[gpy]: %RED%º %ORANGE%Topaz %RED%º
+ItemDisplay[skz]: %RED%º %ORANGE%Skull %RED%º
+
+ItemDisplay[glv]: %ORANGE%Amethyst
+ItemDisplay[glw]: %ORANGE%Diamond
+ItemDisplay[glg]: %ORANGE%Emerald
+ItemDisplay[glr]: %ORANGE%Ruby
+ItemDisplay[glb]: %ORANGE%Sapphire
+ItemDisplay[gly]: %ORANGE%Topaz
+ItemDisplay[skl]: %ORANGE%Skull
+
+ItemDisplay[gsv CLVL<60]: %NAME%
+ItemDisplay[gsw CLVL<60]: %NAME%
+ItemDisplay[gsg CLVL<60]: %NAME%
+ItemDisplay[gsr CLVL<60]: %NAME%
+ItemDisplay[gsb CLVL<60]: %NAME%
+ItemDisplay[gsy CLVL<60]: %NAME%
+ItemDisplay[sku CLVL<60]: %NAME%
+
+ItemDisplay[gfv CLVL<40]: %NAME%
+ItemDisplay[gfw CLVL<40]: %NAME%
+ItemDisplay[gfg CLVL<40]: %NAME%
+ItemDisplay[gfr CLVL<40]: %NAME%
+ItemDisplay[gfb CLVL<40]: %NAME%
+ItemDisplay[gfy CLVL<40]: %NAME%
+ItemDisplay[skf CLVL<40]: %NAME%
+
+ItemDisplay[gcv CLVL<20]: %NAME%
+ItemDisplay[gcw CLVL<20]: %NAME%
+ItemDisplay[gcg CLVL<20]: %NAME%
+ItemDisplay[gcr CLVL<20]: %NAME%
+ItemDisplay[gcb CLVL<20]: %NAME%
+ItemDisplay[gcy CLVL<20]: %NAME%
+ItemDisplay[skc CLVL<20]: %NAME%
+
+ItemDisplay[gsv]:
+ItemDisplay[gsw]:
+ItemDisplay[gsg]:
+ItemDisplay[gsr]:
+ItemDisplay[gsb]:
+ItemDisplay[gsy]:
+ItemDisplay[sku]:
+ItemDisplay[gfv]:
+ItemDisplay[gfw]:
+ItemDisplay[gfg]:
+ItemDisplay[gfr]:
+ItemDisplay[gfb]:
+ItemDisplay[gfy]:
+ItemDisplay[skf]:
+ItemDisplay[gcv]:
+ItemDisplay[gcw]:
+ItemDisplay[gcg]:
+ItemDisplay[gcr]:
+ItemDisplay[gcb]:
+ItemDisplay[gcy]:
+ItemDisplay[skc]:
 
 ////Uniques
 
@@ -431,13 +493,13 @@ ItemDisplay[NMAG CL7 !RW]:
 
 //Helmets
 ItemDisplay[NMAG EQ1 !RW CLVL<60 SOCKETS=3]: %WHITE%%NAME%
-ItemDisplay[NMAG EQ1 !RW CLVL<60 SOCKETS=2]: %WHITE%%NAME% {%TEAL%Lore%White%: %TAN%Ort%WHITE%|%TAN%Sol}
+ItemDisplay[NMAG EQ1 !RW CLVL<60 SOCKETS=2]: %WHITE%%NAME% {%TEAL%Lore%WHITE%: %TAN%Ort%WHITE%|%TAN%Sol}
 //Body Armor
 ItemDisplay[NMAG EQ2 ELT !RW !ETH SOCKETS=3]: %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Enigma%WHITE%: %TAN%Jah%WHITE%|%TAN%Ith%WHITE%|%TAN%Ber}
 ItemDisplay[NMAG EQ2 ELT !RW ETH SOCKETS=3]: %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem}
 ItemDisplay[NMAG EQ2 ELT !RW SOCKETS=4]: %WHITE%%NAME%{%TEAL%Chains of Honor%WHITE%: %TAN%Dol%WHITE%|%TAN%Um%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Fortitu%WHITE%: %TAN%El%WHITE%|%TAN%Sol%WHITE%|%TAN%Dol%WHITE%|%TAN%Lo}
 ItemDisplay[NMAG EQ2 ELT !RW SOCKETS=0]: %WHITE%%NAME%
-ItemDisplay[NMAG EQ2 !INF !ELT !RW !ETH SOCKETS=3 CLVL<60]: %WHITE%%NAME%{%TEAL%Rain%WHITE%: %TAN%Ort%WHITE%|%TAN%Mal%WHITE%|%TAN%Ith %NL%%TEAL%Bone%White%: %TAN%Sol%WHITE%|%TAN%Um%WHITE%|%TAN%Um %NL%%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Peace%White%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Amn}
+ItemDisplay[NMAG EQ2 !INF !ELT !RW !ETH SOCKETS=3 CLVL<60]: %WHITE%%NAME%{%TEAL%Rain%WHITE%: %TAN%Ort%WHITE%|%TAN%Mal%WHITE%|%TAN%Ith %NL%%TEAL%Bone%WHITE%: %TAN%Sol%WHITE%|%TAN%Um%WHITE%|%TAN%Um %NL%%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Peace%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Amn}
 ItemDisplay[NMAG EQ2 !INF !ELT !RW !ETH CLVL<60 SOCKETS=2]: %WHITE%%NAME%{%TEAL%Smoke%WHITE%: %TAN%Nef%WHITE%|%TAN%Lum %NL%%TEAL%Stealth%WHITE%: %TAN%Tal%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG EQ2 !INF !RW ETH SOCKETS>2]: %WHITE%%NAME%
 //Shields
