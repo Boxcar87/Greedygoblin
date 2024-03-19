@@ -56,7 +56,7 @@ ItemDisplay[ma8]: %PURPLE%%NAME%
 ItemDisplay[ma9]: %PURPLE%%NAME%
 ItemDisplay[ma10]: %PURPLE%%NAME%
 ItemDisplay[maz]: %PURPLE%%NAME%
-ItemDisplay[SYNTH]: %NOTIFY-PURPLE%%SOUND-3000%%PURPLE%¤¤¤Synthesized¤¤¤ %GOLD%%NAME%
+ItemDisplay[SYNTH]: %NOTIFY-PURPLE%%SOUND-3000%%PURPLE%¤¤¤Synthesized¤¤¤ %GOLD%%BASENAME%
 
 //Uber Keys
 ItemDisplay[pk1]: %PURPLE%Terror [Countess]
