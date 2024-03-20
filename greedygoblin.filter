@@ -127,6 +127,7 @@ ItemDisplay[r32]: %NOTIFY-PURPLE%%SOUND-3000%%NL%%NL%%RED%ººº¦¦Ï %PURPLE%C
 ItemDisplay[r33]: %NOTIFY-PURPLE%%SOUND-3000%%NL%%NL%%RED%ººº¦¦Ï %PURPLE%ZOD 33%RED% Ï¦¦ººº%NL%%NL%
 
 //Misc quest
+ItemDisplay[QUEST]: %TAN%%NAME%
 ItemDisplay[bbb]: %TAN%%NAME%
 ItemDisplay[ass]: %TAN%%NAME%
 ItemDisplay[bkd]: %TAN%%NAME%
