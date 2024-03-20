@@ -56,7 +56,7 @@ ItemDisplay[ma8]: %PURPLE%%NAME%
 ItemDisplay[ma9]: %PURPLE%%NAME%
 ItemDisplay[ma10]: %PURPLE%%NAME%
 ItemDisplay[maz]: %PURPLE%%NAME%
-ItemDisplay[SYNTH]: %NOTIFY-PURPLE%%SOUND-3000%%PURPLE%¤¤¤Synthesized¤¤¤ %GOLD%%BASENAME%
+ItemDisplay[SYNTH]: %NOTIFY-PURPLE%%SOUND-3000%%PURPLE%¤¤¤Synthesized¤¤¤ %GOLD%%NAME%
 
 //Uber Keys
 ItemDisplay[pk1]: %PURPLE%Terror [Countess]
@@ -160,7 +160,7 @@ ItemDisplay[gpb]: %RED%º %ORANGE%Sapphire %RED%º
 ItemDisplay[gpy]: %RED%º %ORANGE%Topaz %RED%º
 ItemDisplay[skz]: %RED%º %ORANGE%Skull %RED%º
 
-ItemDisplay[glv]: %ORANGE%Amethyst
+ItemDisplay[gzv]: %ORANGE%Amethyst
 ItemDisplay[glw]: %ORANGE%Diamond
 ItemDisplay[glg]: %ORANGE%Emerald
 ItemDisplay[glr]: %ORANGE%Ruby
