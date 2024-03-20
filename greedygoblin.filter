@@ -3,7 +3,8 @@
 //Gold
 ItemDisplay[GOLD<200 CLVL<20]:
 ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<70)]:
-ItemDisplay[GOLD<5000]:
+ItemDisplay[GOLD<5000 CLVL>69]:
+ItemDisplay[GOLD]: %NAME%
 
 //Potions
 ItemDisplay[rvl]: %PURPLE%R%WHITE%Full
