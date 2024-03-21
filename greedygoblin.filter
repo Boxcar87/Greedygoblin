@@ -363,6 +363,7 @@ ItemDisplay[UNI !ID cm3]: %GOLD%Gheed Charm
 ItemDisplay[SET !ID amu]: %NOTIFY-PURPLE%%SOUND-3000%%NL%%RED%º %GREEN%Amulet %RED%º%NL%
 
 ////Rares
+ItemDisplay[RARE ID]: %YELLOW%%NAME%
 
 //Class
 ItemDisplay[RARE CL1 !ID]: %YELLOW%%NAME%
@@ -396,6 +397,7 @@ ItemDisplay[RARE WP13 !wsp !9ws !7ws !ID CLVL>59 PRICE>24999]: %WHITE%[%TAN%%PRI
 ItemDisplay[RARE WEAPON !ID]:
 
 ////Magic
+ItemDisplay[MAG ID]: %BLUE%%NAME%
 
 //Class
 ItemDisplay[MAG CL1 !ID]: %BLUE%%NAME%
@@ -406,7 +408,7 @@ ItemDisplay[MAG CL4 !ID]: %BLUE%%NAME%
 //Armor
 ItemDisplay[MAG amu !ID]: %BLUE%%NAME%
 ItemDisplay[MAG rin !ID]: %BLUE%%NAME%
-ItemDisplay[MAG !ID jew]: %RED%º %BLUE%JEWEL %RED%º
+ItemDisplay[MAG jew !ID]: %RED%º %BLUE%JEWEL %RED%º
 ItemDisplay[MAG EQ1 !ID !ETH CLVL<20]: %BLUE%%NAME%
 ItemDisplay[MAG EQ2 !ID !ETH CLVL<20]: %BLUE%%NAME%
 ItemDisplay[MAG EQ3 !ID !ETH CLVL<20]: %BLUE%%NAME%
@@ -519,7 +521,7 @@ ItemDisplay[NMAG EQ7 !INF !RW !ETH CLSK4>1]: %WHITE%%NAME% %RED%+%BLUE%Barbarian
 ItemDisplay[NMAG EQ7 !INF !RW !ETH CLSK5>1]: %WHITE%%NAME% %RED%+%BLUE%Druid
 ItemDisplay[NMAG EQ7 !INF !RW !ETH CLSK6>1]: %WHITE%%NAME% %RED%+%BLUE%Assassin
 //Remove everything else
-ItemDisplay[NMAG ARMOR !RW]:
+ItemDisplay[NMAG ARMOR !RW !ID]:
 
 ////Weapons are shopfood 
 
@@ -542,12 +544,12 @@ ItemDisplay[NMAG (WP4 OR WP5 OR WP6) (CLVL>19 AND CLVL<60) PRICE>9999]: %WHITE%[
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW !INF CLVL<20]: %WHITE%%NAME%
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW INF CLVL<20]: %WHITE%[%TAN%%PRICE%%WHITE%]
 //Spears and Polearms
-ItemDisplay[NMAG (WP7 OR WP8) !RW SOCKETS=0]: %WHITE%%NAME%%CONTINUE%{%WHITE%Attack rate: %YELLOW%%STAT-68%}
+ItemDisplay[NMAG (WP7 OR WP8) !RW SOCKETS=0]: %WHITE%%NAME%%CONTINUE%
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW SOCKETS=3]: %WHITE%%NAME% %CONTINUE%{%TEAL%Malice%WHITE%: %TAN%Ith%WHITE%|%TAN%El%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW SOCKETS=4]: %WHITE%%NAME% %CONTINUE%{%TEAL%Insight%WHITE%: %TAN%Ral%WHITE%|%TAN%Tir%WHITE%|%TAN%Tal%WHITE%|%TAN%Sol}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW SOCKETS=5]: %WHITE%%NAME% %CONTINUE%{%TEAL%Obedience%WHITE%: %TAN%Hel%WHITE%|%TAN%Ko%WHITE%|%TAN%Thul%WHITE%|%TAN%Eth%WHITE%|%TAN%Fal}
 ItemDisplay[NMAG (WP7 OR WP8) ELT !RW SOCKETS=4]: %WHITE%%NAME% %CONTINUE%{%TEAL%Infinty%WHITE%: %TAN%Ber%WHITE%|%TAN%Mal%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Pride%WHITE%: %TAN%Cham%WHITE%|%TAN%Sur%WHITE%|%TAN%Io%WHITE%|%TAN%Lo}
-ItemDisplay[NMAG (WP7 OR WP8) ELT !RW SOCKETS=5]: %WHITE%%NAME% %CONTINUE%{%WHITE%Attack rate: %YELLOW%%STAT-68%%NL%%TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
+ItemDisplay[NMAG (WP7 OR WP8) ELT !RW SOCKETS=5]: %WHITE%%NAME% %CONTINUE%{%TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
 ItemDisplay[NMAG WP7 ELT !RW SOCKETS=6]: %NL%%RED%ºº¦¦Ï %WHITE%%NAME%%RED% Ï¦¦ºº%NL% %CONTINUE%{%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 OR WP8) !WP6 !WP5 !RW !INF SOCKETS>2 CLVL<60]: %WHITE%%NAME%
 ItemDisplay[NMAG (WP7 OR WP8) !WP6 !WP5 ELT ETH !RW !INF (SOCKETS=0 OR SOCKETS>3)]: %WHITE%%NAME%
@@ -585,7 +587,7 @@ ItemDisplay[NMAG WEAPON !INF !RW CLVL<20 SOCKETS>1]: %WHITE%%NAME%
 ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !INF !RW (CLVL>19 AND CLVL<60) SOCKETS>1]: %WHITE%%NAME%
 
 //Remove everything else
-ItemDisplay[NMAG WEAPON !RW]:
+ItemDisplay[NMAG WEAPON !RW !ID]:
 
 //Charms //No large charms after 60
 ItemDisplay[MAG cm1 !ID]: %RED%º %BLUE%Small Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %RED%º
