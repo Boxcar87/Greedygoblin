@@ -463,7 +463,7 @@ ItemDisplay[NMAG WP12 !INF !RW SKILL(84)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+
 ItemDisplay[NMAG CL4 !RW !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4 !RW]:
 //Assassin Claws
-ItemDisplay[NMAG CL5 !ETH !RW SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(+STR)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(+IAS)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
+ItemDisplay[NMAG CL5 !ETH !RW SOCKETS=0]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(str)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(ias)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(271)% %BLUE%Lightning Sentry%CONTINUE%
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(272)% %BLUE%Inferno Sentry%CONTINUE%
@@ -486,12 +486,12 @@ ItemDisplay[NMAG CL5 !RW]:
 ItemDisplay[NMAG CL6 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL6 !RW !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL6 !RW]:
-//Amazon
+//Amazon CSKILLS(0,[1,2,3])
 ItemDisplay[NMAG CL7 (amd OR ame) !RW !INF]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG CL7 !RW !INF TABSK0>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Bow%CONTINUE%
-ItemDisplay[NMAG CL7 !RW !INF TABSK1>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Passive%CONTINUE%
-ItemDisplay[NMAG CL7 !RW !INF TABSK2>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Javelin%CONTINUE%
-ItemDisplay[NMAG CL7 !RW !INF (TABSK0>1 OR TABSK1>1 OR TABSK2>1)]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG CL7 !RW !INF TABSK0>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF TABSK1>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF TABSK2>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF (TABSK0>0 OR TABSK1>0 OR TABSK2>0)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL7 !bal !9b8 !7b8 CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL7 !RW]:
 
@@ -514,13 +514,13 @@ ItemDisplay[NMAG uit !INF !RW !ETH SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%
 ItemDisplay[NMAG EQ3 !INF !RW !ETH CLVL<60 SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Ancient's Pledge%WHITE%: %TAN%Ral%WHITE%|%TAN%Ort%WHITE%|%TAN%Tal}
 ItemDisplay[NMAG EQ3 !INF !RW !ETH CLVL<60 SOCKETS=2]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Rhyme%WHITE%: %TAN%Shael%WHITE%|%TAN%Eth}
 //Circlets
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(0)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(0)% %BLUE%Amazon
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(1)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(1)% %BLUE%Sorceress
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(2)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(2)% %BLUE%Necromancer
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(3)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(3)% %BLUE%Paladin
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(4)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(4)% %BLUE%Barbarian
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(5)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(5)% %BLUE%Druid
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(6)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(6)% %BLUE%Assassin
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(0)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Amazon
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(1)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Sorceress
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(2)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Necromancer
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(3)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Paladin
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(4)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Barbarian
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(5)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Druid
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(6)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Assassin
 //Remove everything else
 ItemDisplay[NMAG ARMOR !RW !ID]:
 
