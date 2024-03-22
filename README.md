@@ -51,3 +51,10 @@ Any crap item that is 1 box wide first gets checked for gold value, if worth eno
 
 •Style update
 ```
+
+## VSCode Extension
+
+First download the POE filter extension in VSCode
+[image](https://imgur.com/XzGlvvt)
+
+Then navigate to `Users/%USER%/.vscode/extensions/robby.poe-filter.../syntaxes` and replace the Filter.tmLanguage with the file here.
