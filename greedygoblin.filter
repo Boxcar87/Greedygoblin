@@ -2,6 +2,7 @@
 
 ////Styles
 ItemStyle[BoxStyle]: BorderSize=2, BorderColor=135
+ItemStyle[AlertStyle]: BorderSize=2, BorderColor=135, NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54
 
 //Gold
 ItemDisplay[GOLD<200 CLVL<20]:
@@ -40,7 +41,7 @@ ItemDisplay[toa]: <<BoxStyle>> %PURPLE%Token of Absolution
 
 //POD Items
 ItemDisplay[std]: <<BoxStyle>> %NAME%
-ItemDisplay[cx5]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[cx5]: <<AlertStyle>>  %PURPLE%%NAME%
 ItemDisplay[cx6]: <<BoxStyle>> %PURPLE%Diablo's Soulstone
 ItemDisplay[cx7]: <<BoxStyle>> %GREEN%øøø|| %PURPLE%KEY OF CHAOS%RED% ||øøø
 //ItemDisplay[ma1]: <<BoxStyle>> %PURPLE%%NAME%
@@ -60,7 +61,7 @@ ItemDisplay[ma8]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[ma9]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[ma10]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[maz]: <<BoxStyle>> %PURPLE%%NAME%
-ItemDisplay[SYNTH]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%PURPLE%øøøSynthesizedøøø %GOLD%%BASENAME%
+ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%øøøSynthesizedøøø %GOLD%%BASENAME%
 
 //Uber Keys
 ItemDisplay[pk1]: <<BoxStyle>> %PURPLE%Terror [Countess]
@@ -96,8 +97,6 @@ ItemDisplay[aq2 MAG !ID]:
 ItemDisplay[cq2 MAG !ID]:
 
 //RUNES
-ItemDisplay[cx5] %NOTIFY-PURPLE%%SOUND-3000%%NAME%
-
 ItemDisplay[r01]: <<BoxStyle>> %TAN%El 1
 ItemDisplay[r02]: <<BoxStyle>> %TAN%Eld 2
 ItemDisplay[r03]: <<BoxStyle>> %TAN%Tir 3 
@@ -106,7 +105,7 @@ ItemDisplay[r05]: <<BoxStyle>> %TAN%Eth 5
 ItemDisplay[r06]: <<BoxStyle>> %TAN%Ith 6
 ItemDisplay[r07]: <<BoxStyle>> %TAN%Tal 7
 ItemDisplay[r08]: <<BoxStyle>> %TAN%Ral 8
-ItemDisplay[r09]: <<BoxStyle>> %TAN%Ort 9 
+ItemDisplay[r09]: <<BoxStyle>> %TAN%Ort 9
 ItemDisplay[r10]: <<BoxStyle>> %TAN%Thul 10
 ItemDisplay[r11]: <<BoxStyle>> %TAN%Amn 11
 ItemDisplay[r12]: <<BoxStyle>> %TAN%Sol 12
@@ -117,20 +116,20 @@ ItemDisplay[r16]: <<BoxStyle>> %TAN%io 16
 ItemDisplay[r17]: <<BoxStyle>> %TAN%Lum 17
 ItemDisplay[r18]: <<BoxStyle>> %TAN%Ko 18
 ItemDisplay[r19]: <<BoxStyle>> %TAN%Fal 19
-ItemDisplay[r20]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%GREEN%ø %PURPLE%LEM 20%GREEN% ø
-ItemDisplay[r21]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%PUL 21%GREEN% ø%NL%
-ItemDisplay[r22]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øø %PURPLE%UM 22%GREEN% øø%NL%
-ItemDisplay[r23]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øø %PURPLE%MAL 23%GREEN% øø%NL%
-ItemDisplay[r24]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øøø %PURPLE%IST 24%GREEN% øøø%NL%
-ItemDisplay[r25]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øøø| %PURPLE%GUL 25%GREEN% |øøø%NL%
-ItemDisplay[r26]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øøø|| %PURPLE%VEX 26%GREEN% ||øøø%NL%
-ItemDisplay[r27]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øøø|| %PURPLE%OHM 27%GREEN% ||øøø%NL%
-ItemDisplay[r28]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%LO 28%GREEN% ||øøø%NL%%NL%%NL%
-ItemDisplay[r29]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø||  %PURPLE%SUR 29%GREEN% ||øøø%NL%%NL%%NL%
-ItemDisplay[r30]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%BER 30%GREEN% ||øøø%NL%%NL%%NL%
-ItemDisplay[r31]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%JAH 31%GREEN% ||øøø%NL%%NL%%NL%
-ItemDisplay[r32]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%CHAM 32%GREEN% ||øøø%NL%%NL%%NL%
-ItemDisplay[r33]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%ZOD 33%GREEN% ||øøø%NL%%NL%%NL%
+ItemDisplay[r20]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%LEM 20%GREEN% ø%NL%%NL%
+ItemDisplay[r21]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%PUL 21%GREEN% ø%NL%%NL%
+ItemDisplay[r22]: <<AlertStyle>> %NL%%GREEN%øø %PURPLE%UM 22%GREEN% øø%NL%%NL%
+ItemDisplay[r23]: <<AlertStyle>> %NL%%GREEN%øø %PURPLE%MAL 23%GREEN% øø%NL%%NL%
+ItemDisplay[r24]: <<AlertStyle>> %NL%%GREEN%øøø %PURPLE%IST 24%GREEN% øøø%NL%%NL%
+ItemDisplay[r25]: <<AlertStyle>> %NL%%GREEN%øøø| %PURPLE%GUL 25%GREEN% |øøø%NL%%NL%
+ItemDisplay[r26]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%VEX 26%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r27]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%OHM 27%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r28]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%LO 28%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r29]: <<AlertStyle>> %NL%%GREEN%øøø||  %PURPLE%SUR 29%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r30]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%BER 30%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r31]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%JAH 31%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r32]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%CHAM 32%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r33]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%ZOD 33%GREEN% ||øøø%NL%%NL%
 
 //Misc quest
 ItemDisplay[QUEST]: <<BoxStyle>> %TAN%%NAME%
@@ -152,21 +151,21 @@ ItemDisplay[xyz]: <<BoxStyle>> %TAN%%NAME%
 
 //GEMS
 
-ItemDisplay[gpv]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%PURPLE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpw]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%WHITE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpg]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%GREEN%*%WHITE%| %GREEN%ø
-ItemDisplay[gpr]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%RED%*%WHITE%| %GREEN%ø
-ItemDisplay[gpb]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%BLUE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpy]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%YELLOW%*%WHITE%| %GREEN%ø
-ItemDisplay[skz]: <<BoxStyle>> %GREEN%ø %ORANGE%Perfect %WHITE%|%GRAY%*%WHITE%| %GREEN%ø
+ItemDisplay[gpv]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%PURPLE%*%WHITE%| %GREEN%ø
+ItemDisplay[gpw]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%WHITE%*%WHITE%| %GREEN%ø
+ItemDisplay[gpg]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%GREEN%*%WHITE%| %GREEN%ø
+ItemDisplay[gpr]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%RED%*%WHITE%| %GREEN%ø
+ItemDisplay[gpb]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%BLUE%*%WHITE%| %GREEN%ø
+ItemDisplay[gpy]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%YELLOW%*%WHITE%| %GREEN%ø
+ItemDisplay[skz]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%GRAY%*%WHITE%| %GREEN%ø
 
-ItemDisplay[gzv]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%PURPLE%*%WHITE%|
-ItemDisplay[glw]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%WHITE%*%WHITE%|
-ItemDisplay[glg]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%GREEN%*%WHITE%|
-ItemDisplay[glr]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%RED%*%WHITE%|
-ItemDisplay[glb]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%BLUE%*%WHITE%|
-ItemDisplay[gly]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%YELLOW%*%WHITE%|
-ItemDisplay[skl]: <<BoxStyle>> %ORANGE%Flawless %WHITE%|%GRAY%*%WHITE%|
+ItemDisplay[gzv]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%PURPLE%*%WHITE%|
+ItemDisplay[glw]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%WHITE%*%WHITE%|
+ItemDisplay[glg]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%GREEN%*%WHITE%|
+ItemDisplay[glr]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%RED%*%WHITE%|
+ItemDisplay[glb]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%BLUE%*%WHITE%|
+ItemDisplay[gly]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%YELLOW%*%WHITE%|
+ItemDisplay[skl]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%GRAY%*%WHITE%|
 
 ItemDisplay[gsv CLVL<60]: <<BoxStyle>> %NAME%
 ItemDisplay[gsw CLVL<60]: <<BoxStyle>> %NAME%
@@ -221,9 +220,9 @@ ItemDisplay[SET ID]: <<BoxStyle>> %GREEN%%NAME%
 //Helms
 
 //Griffon's Eye
-ItemDisplay[UNI !ETH !ID ci3]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Griffon Eye %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID ci3]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Griffon Eye %GREEN%ø%NL%
 //Shako
-ItemDisplay[UNI !ETH !ID uap]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Harlequin Crest %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID uap]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Harlequin Crest %GREEN%ø%NL%
 //Crown of Ages
 ItemDisplay[UNI !ETH !ID urn]: <<BoxStyle>> %PURPLE%Crown of Ages
 //Andariel's Visage
@@ -231,15 +230,15 @@ ItemDisplay[UNI !ETH !ID usk]: <<BoxStyle>> %PURPLE%Andariel Visage
 //Vampire Gaze
 ItemDisplay[UNI !ETH !ID xh9]: <<BoxStyle>> %PURPLE%Vampire Gaze
 //Arreat's Face
-ItemDisplay[UNI !ETH !ID baa]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Arreat Face %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID baa]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Arreat Face %GREEN%ø%NL%
 //Jalal's Mane
-ItemDisplay[UNI !ETH !ID dra]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Jalal Mane %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID dra]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Jalal Mane %GREEN%ø%NL%
 //Ravenlore
 ItemDisplay[UNI !ETH !ID dre]: <<BoxStyle>> %GOLD%Ravenlore
 //Guillaume's Face
 ItemDisplay[SET !ETH !ID xhm]: <<BoxStyle>> %GREEN%Guillaume Face
 //STEEL SHADE
-ItemDisplay[UNI !ID ulm]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Steel Shade %GREEN%ø%NL%
+ItemDisplay[UNI !ID ulm]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Steel Shade %GREEN%ø%NL%
 //Trangs Helm
 ItemDisplay[SET !ETH !ID uh9]: <<BoxStyle>> %GREEN%Trang-Oul's Helm
 //Stealskull
@@ -248,7 +247,7 @@ ItemDisplay[UNI !ETH !ID xlm]: <<BoxStyle>> %GOLD%Stealskull
 //Armor
 
 //Viper Magi
-ItemDisplay[UNI !ETH !ID xea]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Skin of the Vipermagi %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID xea]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Skin of the Vipermagi %GREEN%ø%NL%
 //Naj's Chest
 ItemDisplay[SET !ETH !ID ult]: <<BoxStyle>> %GREEN% Naj Chest
 //Duriel's Shell
@@ -262,9 +261,9 @@ ItemDisplay[UNI !ETH !ID uar]: <<BoxStyle>> %PURPLE%Tyrael Might
 //Guardian Angel
 ItemDisplay[UNI !ETH !ID xlt]: <<BoxStyle>> %PURPLE%Guardian Angel
 //Tal Rasha Armour
-ItemDisplay[SET !ETH !ID uth]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Tal Armour %GREEN%ø%NL%
+ItemDisplay[SET !ETH !ID uth]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Tal Armour %GREEN%ø%NL%
 //Immortal King Armour
-ItemDisplay[SET !ETH !ID uar]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%IK Armour %GREEN%ø%NL%
+ItemDisplay[SET !ETH !ID uar]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%IK Armour %GREEN%ø%NL%
 
 //Gloves
 
@@ -278,7 +277,7 @@ ItemDisplay[UNI !ETH !ID umg]: <<BoxStyle>> %GOLD%Soul Drainer
 //Belts
 
 //Arachnid Mesh
-ItemDisplay[UNI !ETH !ID ulc]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Arachnid Mesh %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID ulc]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Arachnid Mesh %GREEN%ø%NL%
 //Verdungo's Hearty Cord
 ItemDisplay[UNI !ETH !ID umc]: <<BoxStyle>> %PURPLE%Verdungo
 //String of Ears
@@ -286,18 +285,18 @@ ItemDisplay[UNI !ETH !ID zlb]: <<BoxStyle>> %PURPLE%String of Ears
 //Razortail
 ItemDisplay[UNI !ETH !ID zvb]: <<BoxStyle>> %PURPLE%Razortail
 //Thundergod's Vigor
-ItemDisplay[UNI !ETH !ID zhb]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Thundergods Vigor %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID zhb]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Thundergods Vigor %GREEN%ø%NL%
 
 //Boots
 
 //War Traveler
-ItemDisplay[UNI !ETH !ID xtb]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%War Traveler %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID xtb]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%War Traveler %GREEN%ø%NL%
 //Shadow Dancer
 ItemDisplay[UNI !ETH !ID uhb]: <<BoxStyle>> %GOLD%Shadow Dancer
 //Sandstorm Trek
 ItemDisplay[UNI !ETH !ID uvb]: <<BoxStyle>> %GOLD%Sandstorm Trek
 //Gore Rider
-ItemDisplay[UNI !ETH !ID xhb]:%PURPLE%Gore Rider
+ItemDisplay[UNI !ETH !ID xhb]: <<BoxStyle>> %PURPLE%Gore Rider
 //Aldur's
 ItemDisplay[SET !ETH !ID xtb]: <<BoxStyle>> %GREEN%Aldur Boots
 
@@ -310,7 +309,7 @@ ItemDisplay[UNI !ETH !ID 7gw]: <<BoxStyle>> %PURPLE%Death Web
 //Eschuta's
 ItemDisplay[UNI !ETH !ID obc]: <<BoxStyle>> %PURPLE%Eschuta
 //Windforce
-ItemDisplay[UNI !ID 6lw]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Windfore %GREEN%ø%NL%
+ItemDisplay[UNI !ID 6lw]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Windfore %GREEN%ø%NL%
 //Reaper's Toll
 ItemDisplay[UNI !ETH !ID 7s8]: <<BoxStyle>> %GOLD%Reaper Toll
 //ETH Reaper's Toll
@@ -339,9 +338,9 @@ ItemDisplay[UNI !ID 7ls]: <<BoxStyle>> %GOLD%Frostwind
 //Shields
 
 //Stormshield
-ItemDisplay[UNI !ETH !ID uit]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Stormshield %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID uit]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Stormshield %GREEN%ø%NL%
 //Homunculus
-ItemDisplay[UNI !ETH !ID nea]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Homunculus %GREEN%ø%NL%
+ItemDisplay[UNI !ETH !ID nea]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Homunculus %GREEN%ø%NL%
 //Herald of Zakarum
 ItemDisplay[UNI !ETH !ID pa9]: <<BoxStyle>> %PURPLE%Herald of Zakarum 
 //Darkforce Spawn
@@ -356,11 +355,11 @@ ItemDisplay[UNI !ETH !ID xts]: <<BoxStyle>> %GOLD%Radament Sphere
 ItemDisplay[UNI !ETH !ID uml]: <<BoxStyle>> %GOLD%Blackoak
 
 //Jewelry
-ItemDisplay[UNI !ID rin]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%NL%%GREEN%øøø|| %PURPLE%Ring ||øøø%NL%%NL%
-ItemDisplay[UNI !ID amu]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%øøø|| %PURPLE%Amulet ||øøø%NL%
-ItemDisplay[UNI !ID jew]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %PURPLE%Rainbow Facet %GREEN%ø%NL%
+ItemDisplay[UNI !ID rin]: <<AlertStyle>> %NL%%NL%%GREEN%øøø|| %PURPLE%Ring ||øøø%NL%%NL%
+ItemDisplay[UNI !ID amu]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%Amulet ||øøø%NL%
+ItemDisplay[UNI !ID jew]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Rainbow Facet %GREEN%ø%NL%
 ItemDisplay[UNI !ID cm3]: <<BoxStyle>> %GOLD%Gheed Charm
-ItemDisplay[SET !ID amu]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%NL%%GREEN%ø %GREEN%Amulet %GREEN%ø%NL%
+ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%ø %GREEN%Amulet %GREEN%ø%NL%
 
 ////Rares
 ItemDisplay[RARE ID]: <<BoxStyle>> %YELLOW%%NAME%

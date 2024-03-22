@@ -54,7 +54,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword",
-				"match": "\\b(Show|Hide|True|False)\\b"
+				"match": "\\b(True|False)\\b"
 			}]
 		},
 		"attribute": {
