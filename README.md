@@ -1,7 +1,9 @@
 ![Look again](https://imgur.com/WnJGjbR.jpg)
 ![Look thrice](https://i.imgur.com/wbLP9ME.jpg)
 
-GreedyGoblin is a generic filter, I don't go line by line editing every possible item. I have constructed the script in a very readable manner, if you want to edit it some please feel free and just rename it so it saves. If you don't want a certain item to show, you can delete that block or comment it out, either will work. If you want something else to show, please add it in accordingly to prevent issues. POD scripts read in order of tier, so you need to label Superior items > Non-magic items > Inferior items, from top to bottom.
+**GreedyGoblin is a generic filter, I don't go line by line editing every possible item.**
+
+I have constructed the script in a very readable manner, if you want to edit it some please feel free and just rename it so it saves. If you don't want a certain item to show, you can delete that block or comment it out, either will work. If you want something else to show, please add it in accordingly to prevent issues. POD scripts read in order of tier, so you need to label Superior items > Non-magic items > Inferior items, from top to bottom.
 
 Here's how it works:
 
