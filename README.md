@@ -43,7 +43,7 @@ OOC, any rune Lem+, and high value items have alerts and a sexy female voice
 Any crap item that is 1 box wide first gets checked for gold value, if worth enough it will show up as its value
 `
 
-!*After 60 Scepter bases don't show, I haven't built the filter around those yet. So if you're wanting to make a runeword in a scepter, temporarily disable GreedyGoblin.
+!*After 60 Scepter bases don't show, I haven't built the filter around those yet. So if you're wanting to make a runeword in a scepter, temporarily disable GreedyGoblin.*
 
 ### 21 Mar 2024
 ```
