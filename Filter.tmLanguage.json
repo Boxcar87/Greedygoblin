@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Filter",
+	"patterns": [{
+			"include": "#operator"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#influences"
+		},
+		{
+			"include": "#color"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#attribute"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment-line"
+		}
+	],
+	"repository": {
+		"operator": {
+			"patterns": [{
+				"name": "keyword",
+				"match": "(:|=|<|>|!|%|\"|ItemDisplay|ItemStyle|OR|AND)"
+			}]
+		},
+		"number": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(QUEST|SKILL|CODE|RUNENAME|NORM|EXC|CONTINUE|NOTIFYSOUND|NOTIFY|PRICE|RARE|UNI|MAPICON|NMAG|MAG|SET|MAP|CLVL|ILVL|REQLVL|SOCKETS|SOCK|NL|ID|ETH|ELT|WEAPON|WP10|WP11|WP12|WP13|WP1|WP2|WP3|WP4|WP5|WP6|WP7|WP8|WP9|CL1|CL2|CL3|CL4|CL5|CL6|CL7|EQ1|EQ2|EQ3|EQ4|EQ5|EQ6|EQ7|ARMOR|SUP|INF|RW|CLSK0|CLSK1|CLSK2|CLSK3|CLSK4|CLSK5|CLSK6|ALLSK|TABSK0|TABSK1|TABSK2|TABSK8|TABSK9|TABSK10|TABSK16|TABSK17|TABSK18|TABSK24|TABSK25|TABSK26|TABSK32|TABSK33|TABSK34|TABSK40|TABSK41|TABSK42|TABSK48|TABSK49|TABSK50|ED|RES|DEF|LIFE|IAS|FCR|GEMLEVEL|RUNE|SYNTH|SPECIAIL|STAT|SK)"
+			}]
+		},
+		"influences": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "\\b(Shaper|Elder|Hunter|Warlord|Crusader|Redeemer|NAME|BASENAME)\\b"
+			}]
+		},
+		"color": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b(DARK_GREEN|DGREEN|RED|GREEN|BLUE|BROWN|WHITE|YELLOW|Circle|GREY|GRAY|PINK|CYAN|TEAL|GOLD|PURPLE|ORANGE|BLACK|TAN|Diamond|Hexagon|Square|Star|Triangle|Kite|Cross|Pentagon|Moon|Teardrop|UpsideDownHouse|Temp)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword",
+				"match": "\\b(Show|Hide|True|False)\\b"
+			}]
+		},
+		"attribute": {
+			"patterns": [{
+				"name": "variable",
+				"match": "\\b(LinkedSockets|SetTextColor|SetBackgroundColor|SetBorderColor|SetFontSize|PlayAlertSound|BaseType|Class|Rarity|Prophecy|ItemLevel|DropLevel|Sockets|SocketGroup|Width|Height|StackSize|Quality|Corrupted|GemLevel|ShapedMap|ElderMap|Identified|HasExplicitMod|AnyEnchantment|HasEnchantment|ShaperItem|FracturedItem|SynthesisedItem|MinimapIcon|PlayEffect|ElderItem|CorruptedMods|DisableDropSound|MapTier|HasInfluence|AreaLevel)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "string",
+				"match": "\\\\"
+			}]
+		},
+		"comment-line": {
+			"name": "comment",
+			"begin": "//",
+			"end": "\n",
+			"patterns": [{
+				"name": "comment",
+				"match": "//"
+			}]
+		}
+	},
+	"scopeName": "source.filter"
+}
