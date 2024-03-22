@@ -463,21 +463,21 @@ ItemDisplay[NMAG WP12 !INF !RW SKILL(84)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+
 ItemDisplay[NMAG CL4 !RW !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4 !RW]:
 //Assassin Claws
-ItemDisplay[NMAG CL5 !ETH !RW SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um}
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Death Sentry%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Lightning Sentry%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Inferno Sentry%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(277)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Blade Shield%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(278)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Venom%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(274)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Blades of Ice%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(267)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Fade%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(263)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Weapon Block%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(269)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Claws of Thunder%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(259)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Fists of Fire%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(254)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Tiger Strike%CONTINUE% 
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(265)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Cobra Strike%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(266)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Blade Fury%CONTINUE%
-ItemDisplay[NMAG CL5 !ETH !RW SKILL(273)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Mind Blast%CONTINUE%    
+ItemDisplay[NMAG CL5 !ETH !RW SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(+STR)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(+IAS)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(271)% %BLUE%Lightning Sentry%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(272)% %BLUE%Inferno Sentry%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(277)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(277)% %BLUE%Blade Shield%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(278)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(278)% %BLUE%Venom%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(274)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(274)% %BLUE%Blades of Ice%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(267)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(267)% %BLUE%Fade%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(263)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(263)% %BLUE%Weapon Block%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(269)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(269)% %BLUE%Claws of Thunder%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(259)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(259)% %BLUE%Fists of Fire%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(254)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(254)% %BLUE%Tiger Strike%CONTINUE% 
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(265)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(265)% %BLUE%Cobra Strike%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(266)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(266)% %BLUE%Blade Fury%CONTINUE%
+ItemDisplay[NMAG CL5 !ETH !RW SKILL(273)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(273)% %BLUE%Mind Blast%CONTINUE%   
 ItemDisplay[NMAG CL5 !ETH !INF !RW !9xf !9cs !7xf !7cs (SOCKETS=0 OR SOCKETS=3) (SKILL(276)>1 OR SKILL(271)>1 OR SKILL(272)>1 OR SKILL(277)>1 OR SKILL(278)>1 OR SKILL(274)>1 OR SKILL(267)>1 OR SKILL(263)>1 OR SKILL(269)>1 OR SKILL(259)>1 OR SKILL(254)>1 OR SKILL(265)>1 OR SKILL(266)>1 OR SKILL(273)>1)]: <<BoxStyle>> %WHITE%%NAME% 
 ItemDisplay[NMAG CL5 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL5 !RW !ETH !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
@@ -510,13 +510,13 @@ ItemDisplay[NMAG uit !INF !RW !ETH SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%
 ItemDisplay[NMAG EQ3 !INF !RW !ETH CLVL<60 SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Ancient's Pledge%WHITE%: %TAN%Ral%WHITE%|%TAN%Ort%WHITE%|%TAN%Tal}
 ItemDisplay[NMAG EQ3 !INF !RW !ETH CLVL<60 SOCKETS=2]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Rhyme%WHITE%: %TAN%Shael%WHITE%|%TAN%Eth}
 //Circlets
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(0)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(0)%%BLUE%Amazon
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(1)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(1)%%BLUE%Sorceress
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(2)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(2)%%BLUE%Necromancer
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(3)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(3)%%BLUE%Paladin
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(4)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(4)%%BLUE%Barbarian
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(5)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(5)%%BLUE%Druid
-ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(6)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(6)%%BLUE%Assassin
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(0)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(0)% %BLUE%Amazon
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(1)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(1)% %BLUE%Sorceress
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(2)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(2)% %BLUE%Necromancer
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(3)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(3)% %BLUE%Paladin
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(4)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(4)% %BLUE%Barbarian
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(5)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(5)% %BLUE%Druid
+ItemDisplay[NMAG EQ7 !INF !RW !ETH CSKILLS(6)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%CSKILLS(6)% %BLUE%Assassin
 //Remove everything else
 ItemDisplay[NMAG ARMOR !RW !ID]:
 
@@ -555,22 +555,54 @@ ItemDisplay[NMAG 6cb !INF ETH !RW (SOCKETS=0 OR SOCKETS=4)]: <<BoxStyle>> %WHITE
 //Crossbows
 
 //Staves
-ItemDisplay[NMAG WP11 !INF !RW SKILL(48)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(48)%%BLUE%Nova%CONTINUE%
-ItemDisplay[NMAG WP11 !INF !RW SKILL(59)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(59)%%BLUE%Blizzard%CONTINUE%
-ItemDisplay[NMAG WP11 !INF !RW SKILL(64)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(64)%%BLUE%Frozen Orb%CONTINUE%
-ItemDisplay[NMAG WP11 !INF !RW !ETH (SOCKETS=0 OR SOCKETS=4) SKILL(58)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+% SKILL(58)%%BLUE%Energy Shield
+ItemDisplay[NMAG WP11 !RW SKILL(48)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(48)% %BLUE%Nova%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL(59)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(59)% %BLUE%Blizzard%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL(64)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(64)% %BLUE%Frozen Orb%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Frigerate")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Frigerate")% %BLUE%Frigerate%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Freezing Pulse")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Freezing Pulse")% %BLUE%Freezing Pulse%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Frost Nova")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Frost Nova")% %BLUE%Frost Nova%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Cold Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Cold Mastery")% %BLUE%Cold Mastery%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Chain Lightning")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Chain Lightning")% %BLUE%Chain Lightning%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Lightning Surge")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Lightning Surge")% %BLUE%Lightning Surge%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Discharge")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Discharge")% %BLUE%Discharge%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Thunder Storm")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Thunder Storm")% %BLUE%Thunder Storm%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Lightning Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Lightning Mastery")% %BLUE%Lightning Mastery%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Warmth")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Warmth")% %BLUE%Warmth%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Enflame")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Enflame")% %BLUE%Enflame%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Meteor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Meteor")% %BLUE%Meteor%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Fire Ball")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Ball")% %BLUE%Fire Ball%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Fire Wall")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Wall")% %BLUE%Fire Wall%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Hydra")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Hydra")% %BLUE%Hydra%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Fire Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Mastery")% %BLUE%Fire Mastery%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL(58)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(58)% %BLUE%Energy Shield%CONTINUE%
+ItemDisplay[NMAG WP11 !RW !ETH (SKILL(48) OR SKILL(59) OR SKILL(64) OR SKILL(58) OR SKILL("Fire Mastery") OR SKILL("Hydra") OR SKILL("Fire Wall") OR SKILL("Fire Ball") OR SKILL("Meteor") OR SKILL("Enflame") OR SKILL("Warmth") OR SKILL("Lightning Mastery") OR SKILL("Thunder Storm") OR SKILL("Discharge") OR SKILL("Chain Lightning") OR SKILL("Lightning Surge") OR SKILL("Cold Mastery") OR SKILL("Frigerate") OR SKILL("Freezing Pulse") OR SKILL("Frost Nova"))]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG WP11 !RW ETH (SKILL(48) OR SKILL(59) OR SKILL(64) OR SKILL(58) OR SKILL("Fire Mastery") OR SKILL("Hydra") OR SKILL("Fire Wall") OR SKILL("Fire Ball") OR SKILL("Meteor") OR SKILL("Enflame") OR SKILL("Warmth") OR SKILL("Lightning Mastery") OR SKILL("Thunder Storm") OR SKILL("Discharge") OR SKILL("Chain Lightning") OR SKILL("Lightning Surge") OR SKILL("Cold Mastery") OR SKILL("Frigerate") OR SKILL("Freezing Pulse") OR SKILL("Frost Nova"))]: <<BoxStyle>> %GRAY%%NAME%
 ItemDisplay[NMAG WP11 !wst !8ws !6ws !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP11 !wst !8ws !6ws !RW (CLVL>19 AND CLVL<60) PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP11 !INF !RW CLVL<20]: <<BoxStyle>> %WHITE%%NAME%
 //Wands
-ItemDisplay[NMAG WP12 !INF !RW SKILL(92)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(92)%%BLUE%Poison Nova%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(78)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(78)%%BLUE%Bone Wall%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(74)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(74)%%BLUE%Corpse Explosion%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(91)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(91)%%BLUE%Lower Resist%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(87)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(87)%%BLUE%Decrepify%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(67)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(67)%%BLUE%Teeth%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW SKILL(95)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(95)%%BLUE%Revive%CONTINUE%
-ItemDisplay[NMAG WP12 !INF !RW !ETH (SOCKETS=0 OR SOCKETS=2) SKILL(84)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(84)%%BLUE%Bonespear
+ItemDisplay[NMAG WP12 !RW SKILL(92)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(92)% %BLUE%Poison Nova%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(78)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(78)% %BLUE%Bone Wall%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(74)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(74)% %BLUE%Corpse Explosion%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(91)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(91)% %BLUE%Lower Resist%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(87)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(87)% %BLUE%Decrepify%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(67)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(67)% %BLUE%Teeth%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL(95)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(95)% %BLUE%Revive%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Summon Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Summon Mastery")% %BLUE%Summon Mastery%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Raise Skeleton Warrior")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Raise Skeleton Warrior")% %BLUE%Skelly Warrior%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Raise Skeletal Mage")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Raise Skeletal Mage")% %BLUE%Skelly Mage%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Bone Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Bone Armor")% %BLUE%Bone Armor%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Clay Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Clay Golem")% %BLUE%Clay Golem%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Blood Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Blood Golem")% %BLUE%Blood Golem%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Fire Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Golem")% %BLUE%Fire Golem%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Iron Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Iron Golem")% %BLUE%Iron Golem%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Convocation")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Convocation")% %BLUE%Convocation%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Desecrate")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Desecrate")% %BLUE%Desecrate%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Bone Spirit")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Bone Spirit")% %BLUE%Bone Spirit%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL("Hemorrhage")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Hemorrhage")% %BLUE%Hemorrhage%CONTINUE%
+ItemDisplay[NMAG WP12 !RW !ETH SKILL(84)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(84)%%BLUE%Bonespear%%CONTINUE%
+ItemDisplay[NMAG WP12 !RW !ETH (SKILL(92) OR SKILL(78) OR SKILL(74) OR SKILL(91) OR SKILL(87) OR SKILL(67) OR SKILL(95) OR SKILL("Bone Armor") OR SKILL("Bone Spirit") OR SKILL("Desecrate") OR SKILL("Convocation") OR SKILL("Iron Golem") OR SKILL("Fire Golem") OR SKILL("Clay Golem") OR SKILL("Blood Golem") OR SKILL("Summon Mastery") OR SKILL("Raise Skeleton Warrior") OR SKILL("Raise Skeletal Mage") OR SKILL("Hemorrhage"))]: <<BoxStyle>> %WHITE%%NAME%  
+ItemDisplay[NMAG WP12 !RW ETH (SKILL(92) OR SKILL(78) OR SKILL(74) OR SKILL(91) OR SKILL(87) OR SKILL(67) OR SKILL(95) OR SKILL("Bone Armor") OR SKILL("Bone Spirit") OR SKILL("Desecrate") OR SKILL("Convocation") OR SKILL("Iron Golem") OR SKILL("Fire Golem") OR SKILL("Clay Golem") OR SKILL("Blood Golem") OR SKILL("Summon Mastery") OR SKILL("Raise Skeleton Warrior") OR SKILL("Raise Skeletal Mage") OR SKILL("Hemorrhage"))]: <<BoxStyle>> %GRAY%%NAME% 
 ItemDisplay[NMAG WP12 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]   
 ItemDisplay[NMAG WP12 !RW (CLVL>19 AND CLVL<60) PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP12 !INF !RW CLVL<20]: <<BoxStyle>> %WHITE%%NAME%

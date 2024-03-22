@@ -48,7 +48,7 @@
 		"color": {
 			"patterns": [{
 				"name": "constant.numeric",
-				"match": "\\b(DARK_GREEN|DGREEN|RED|GREEN|BLUE|BROWN|WHITE|YELLOW|Circle|GREY|GRAY|PINK|CYAN|TEAL|GOLD|PURPLE|ORANGE|BLACK|TAN|Diamond|Hexagon|Square|Star|Triangle|Kite|Cross|Pentagon|Moon|Teardrop|UpsideDownHouse|Temp)\\b"
+				"match": "\\b(DARK_GREEN|DGREEN|RED|GREEN|BLUE|BROWN|WHITE|YELLOW|Circle|GRAY|PINK|CYAN|TEAL|GOLD|PURPLE|ORANGE|BLACK|TAN|Diamond|Hexagon|Square|Star|Triangle|Kite|Cross|Pentagon|Moon|Teardrop|UpsideDownHouse|Temp)\\b"
 			}]
 		},
 		"keywords": {
