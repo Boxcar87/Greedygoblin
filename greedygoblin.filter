@@ -482,13 +482,17 @@ ItemDisplay[NMAG CL5 !ETH !INF !RW !9xf !9cs !7xf !7cs (SOCKETS=0 OR SOCKETS=3) 
 ItemDisplay[NMAG CL5 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL5 !RW !ETH !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL5 !RW]:
-//Sorceress shopfood
+//Sorceress
 ItemDisplay[NMAG CL6 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL6 !RW !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL6 !RW]:
-//Amazon shopfood
+//Amazon
+ItemDisplay[NMAG CL7 (amd OR ame) !RW !INF]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG CL7 !RW !INF TABSK0>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Bow%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF TABSK1>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Passive%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF TABSK2>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%TABSK0% %BLUE%Javelin%CONTINUE%
+ItemDisplay[NMAG CL7 !RW !INF (TABSK0>1 OR TABSK1>1 OR TABSK2>1)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL7 !bal !9b8 !7b8 CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG CL7 !RW !INF CLVL<60]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL7 !RW]:
 
 //Armor //Show Superior Armor/Shield bases >3OS Chest and Monarchs
