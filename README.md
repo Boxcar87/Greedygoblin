@@ -45,11 +45,9 @@ Any crap item that is 1 box wide first gets checked for gold value, if worth eno
 
 !*After 60 Scepter bases don't show, I haven't built the filter around those yet. So if you're wanting to make a runeword in a scepter, temporarily disable GreedyGoblin.*
 
-### 21 Mar 2024
+### 22 Mar 2024
 ```
-•Various bug fixes
-
-•Style update
+•Added support for most skills for Necro and Sorc
 ```
 
 ## VSCode Extension
