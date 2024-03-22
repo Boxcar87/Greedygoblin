@@ -43,7 +43,23 @@ ItemDisplay[std]: <<BoxStyle>> %NAME%
 ItemDisplay[cx5]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[cx6]: <<BoxStyle>> %PURPLE%Diablo's Soulstone
 ItemDisplay[cx7]: <<BoxStyle>> %GREEN%øøø|| %PURPLE%KEY OF CHAOS%RED% ||øøø
-ItemDisplay[MAP]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%PURPLE%%NAME%
+//ItemDisplay[ma1]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma1]: <<BoxStyle>> %PURPLE%%NAME%
+//ItemDisplay[ma2]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma2]: <<BoxStyle>> %PURPLE%%NAME%
+//ItemDisplay[ma3]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma3]: <<BoxStyle>> %PURPLE%%NAME%
+//ItemDisplay[ma4]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma4]: <<BoxStyle>> %PURPLE%%NAME%
+//ItemDisplay[ma5]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma5]: <<BoxStyle>> %PURPLE%%NAME%
+//ItemDisplay[ma6]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma6]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma7]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma8]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma9]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[ma10]: <<BoxStyle>> %PURPLE%%NAME%
+ItemDisplay[maz]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[SYNTH]: <<BoxStyle>> %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%MAPICON(54)%%PURPLE%øøøSynthesizedøøø %GOLD%%BASENAME%
 
 //Uber Keys
@@ -80,7 +96,7 @@ ItemDisplay[aq2 MAG !ID]:
 ItemDisplay[cq2 MAG !ID]:
 
 //RUNES
-ItemDisplay[cx5] %NOTIFY(PURPLE)%%NOTIFYSOUND(3000)%%NAME%
+ItemDisplay[cx5] %NOTIFY-PURPLE%%SOUND-3000%%NAME%
 
 ItemDisplay[r01]: <<BoxStyle>> %TAN%El 1
 ItemDisplay[r02]: <<BoxStyle>> %TAN%Eld 2
