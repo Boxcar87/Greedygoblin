@@ -56,6 +56,7 @@ Any crap item that is 1 box wide first gets checked for gold value, if worth eno
 
 *This is for editing the filter manually yourself, it is not required and only makes reading/writing a bit easier inside of VSCode*
 
+![sample](https://i.imgur.com/MxSZBcy.png)
 First download the POE filter extension in VSCode
 
 ![image](https://imgur.com/5CCTZnE.jpg)
