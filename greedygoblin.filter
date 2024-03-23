@@ -216,6 +216,7 @@ ItemDisplay[skc]:
 ////Uniques
 ItemDisplay[UNI ID]: <<BoxStyle>> %GOLD%%NAME%
 ItemDisplay[SET ID]: <<BoxStyle>> %GREEN%%NAME%
+ItemDisplay[SET !ID]: <<BoxStyle>> %GREEN%%NAME%
 
 //Helms
 
@@ -440,19 +441,21 @@ ItemDisplay[MAG WEAPON !ID]:
 //Styling for white items
 ItemDisplay[SUP]: <<BoxStyle>> %BASENAME%%CONTINUE%
 ItemDisplay[ED WEAPON !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
-ItemDisplay[ED (EQ1 OR EQ2 OR EQ3 OR EQ7) !RW]: <<BoxStyle>> %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[ED (EQ1 OR EQ2 OR EQ3 OR EQ7) !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG WEAPON ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG (EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG (WEAPON OR EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED=0 !RW]: <<BoxStyle>> %PURPLE%Eth %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG SOCKETS>0 !RW]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 
-//Class  //Show Pally shields and 3OS Assassin claws with +2
+//Class 
 
-ItemDisplay[NMAG CL1 !RW !INF FILTERLVL<3]:%WHITE%%NAME%
+ItemDisplay[NMAG CL1 !RW !INF FILTERLVL<4]:%WHITE%%NAME%
 ItemDisplay[NMAG CL1 !RW]:
-ItemDisplay[NMAG CL2 !RW !INF FILTERLVL<3]:%WHITE%%NAME%
+ItemDisplay[NMAG CL2 !RW !INF FILTERLVL<4]:%WHITE%%NAME%
 ItemDisplay[NMAG CL2 !RW]:
+
 //Pally Shields
+ItemDisplay[NMAG CL3 RES>0] %GREEN%+%BLUE%%STAT(39)%%%DGREEN%res %BASENAME%%CONTINUE%
 ItemDisplay[NMAG CL3 ELT !INF !RW !ETH SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME%%CONTINUE%{%TEAL%Spirit%WHITE%: %TAN%Tal%WHITE%|%TAN%Thul%WHITE%|%TAN%Ort%WHITE%|%TAN%Amn %NL%%TEAL%Pheonix%WHITE%: %TAN%Vex%WHITE%|%TAN%Vex%WHITE%|%TAN%Lo%WHITE%|%TAN%Jah}
 ItemDisplay[NMAG CL3 ELT !INF !RW ETH SOCKETS=4]: <<BoxStyle>>  %WHITE%%NAME%%CONTINUE%{%TEAL%Exile%WHITE%: %TAN%Vex%WHITE%|%TAN%Ohm%WHITE%|%TAN%Ist%WHITE%|%TAN%Dol}
 ItemDisplay[NMAG CL3 ELT !INF !RW (SOCKETS=0 OR SOCKETS=4)]: <<BoxStyle>>  %WHITE%%NAME% 
@@ -460,10 +463,12 @@ ItemDisplay[NMAG CL3 !ELT !INF !RW !ETH FILTERLVL<3 SOCKETS=2]: <<BoxStyle>> %WH
 ItemDisplay[NMAG CL3 !ELT !INF !RW !ETH FILTERLVL<3 SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Ancient's Pledge%WHITE%: %TAN%Ral%WHITE%|%TAN%Ort%WHITE%|%TAN%Tal}
 ItemDisplay[NMAG CL3 !ELT !INF !RW !ETH FILTERLVL<3 SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Spirit%WHITE%: %TAN%Tal%WHITE%|%TAN%Thul%WHITE%|%TAN%Ort%WHITE%|%TAN%Amn}
 ItemDisplay[NMAG CL3 !RW]:
+
 //Necromancer shields
 ItemDisplay[NMAG WP12 !INF !RW SKILL(84)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Bonespear
-ItemDisplay[NMAG CL4 !RW !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG CL4 !RW !INF FILTERLVL<4]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4 !RW]:
+
 //Assassin Claws
 ItemDisplay[NMAG CL5 !ETH !RW SOCKETS=0]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(str)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(ias)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
@@ -484,10 +489,12 @@ ItemDisplay[NMAG CL5 !ETH !INF !RW !9xf !9cs !7xf !7cs (SOCKETS=0 OR SOCKETS=3) 
 ItemDisplay[NMAG CL5 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL5 !RW !ETH !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL5 !RW]:
+
 //Sorceress
 ItemDisplay[NMAG CL6 !RW CLVL>59 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL6 !RW !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL6 !RW]:
+
 //Amazon CSKILLS(0,[1,2,3])
 ItemDisplay[NMAG CL7 (amd OR ame) !RW !INF]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL7 !RW !INF FILTERLVL<3 TABSK0>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
