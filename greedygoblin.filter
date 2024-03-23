@@ -555,11 +555,11 @@ ItemDisplay[NMAG 72h !INF ETH !RW (SOCKETS=0 OR SOCKETS=3)]: <<BoxStyle>> %WHITE
 ItemDisplay[NMAG 7gd !INF !ETH !RW (SOCKETS=0 OR SOCKETS=5)]: <<BoxStyle>> %WHITE%%NAME%
 //Daggers, Thrown, Javelins are shopfood
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG (WP4 OR WP5 OR WP6) FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW !INF FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW INF FILTERLVL=1]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 //Spears and Polearms
-ItemDisplay[NMAG (WP7 OR WP8) !RW !INF SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG (WP7 OR WP8) !pil !RW !INF SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%%CONTINUE%
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Malice%WHITE%: %TAN%Ith%WHITE%|%TAN%El%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Insight%WHITE%: %TAN%Ral%WHITE%|%TAN%Tir%WHITE%|%TAN%Tal%WHITE%|%TAN%Sol}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Obedience%WHITE%: %TAN%Hel%WHITE%|%TAN%Ko%WHITE%|%TAN%Thul%WHITE%|%TAN%Eth%WHITE%|%TAN%Fal}
