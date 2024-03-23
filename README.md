@@ -8,7 +8,11 @@ I have constructed the script in a very readable manner, if you want to edit it 
 Here's how it works:
 
 `
-Ethereal items have a purple ETH prior to name
+Ethereal items have a purple ETH pas a prefix
+`
+
+`
+Enhanced Damage or Enhanced Defense items will show their respective %ED as a prefix
 `
 
 `
@@ -45,9 +49,9 @@ Any crap item that is 1 box wide first gets checked for gold value, if worth eno
 
 !*After 60 Scepter bases don't show, I haven't built the filter around those yet. So if you're wanting to make a runeword in a scepter, temporarily disable GreedyGoblin.*
 
-### 22 Mar 2024
+### 23 Mar 2024
 ```
-•Added support for most skills for Necro and Sorc
+•Depreciated CLVL filter scaling and replaced the mechanic with Filter level.
 ```
 
 ## VSCode Extension
