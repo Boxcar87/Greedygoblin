@@ -1,5 +1,5 @@
-![Look again](https://imgur.com/WnJGjbR.jpg)
-![Look thrice](https://i.imgur.com/wbLP9ME.jpg)
+![https://imgur.com/WnJGjbR](https://imgur.com/zg05tNC.png)
+![https://imgur.com/wbLP9ME.jpg](https://imgur.com/y5zM71z.png)
 
 **GreedyGoblin is a generic filter, I don't go line by line editing every possible item.**
 
