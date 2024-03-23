@@ -52,6 +52,7 @@ Any crap item that is 1 box wide first gets checked for gold value, if worth eno
 ### 23 Mar 2024
 ```
 •Depreciated CLVL filter scaling and replaced the mechanic with Filter level.
+•Fixed bug with set items.
 ```
 
 ## VSCode Extension
