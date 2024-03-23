@@ -388,12 +388,12 @@ ItemDisplay[RARE ARMOR !ID]:
 
 //Weapons are shopfood
 ItemDisplay[RARE WEAPON FILTERLVL<3]: <<BoxStyle>> %YELLOW%%NAME%
-ItemDisplay[RARE WP4 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[RARE WP5 !bal !9b8 !7b8 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%] 
-ItemDisplay[RARE WP6 !bal !9b8 !7b8 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[RARE WP11 !wst !8ws !6ws !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[RARE WP12 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[RARE WP13 !wsp !9ws !7ws !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[RARE WP4 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[RARE WP5 !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%] 
+ItemDisplay[RARE WP6 !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[RARE WP11 !wst !8ws !6ws !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[RARE WP12 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[RARE WP13 !wsp !9ws !7ws !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 //Remove everything else
 ItemDisplay[RARE WEAPON !ID]:
 
@@ -422,18 +422,18 @@ ItemDisplay[MAG ARMOR !ID]:
 
 //Weapons are shopfood
 ItemDisplay[MAG WEAPON FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG WP4 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[MAG WP5 !bal !9b8 !7b8 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[MAG WP6 !bal !9b8 !7b8 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[MAG WP11 !wst !8ws !6ws !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]:
-ItemDisplay[MAG WP12 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[MAG WP13 !wsp !9ws !7ws !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]:
+ItemDisplay[MAG WP4 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[MAG WP5 !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[MAG WP6 !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[MAG WP11 !wst !8ws !6ws !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]:
+ItemDisplay[MAG WP12 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[MAG WP13 !wsp !9ws !7ws !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]:
 ItemDisplay[MAG CL5 !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG CL5 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
+ItemDisplay[MAG CL5 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
 ItemDisplay[MAG CL6 !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG CL6 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
+ItemDisplay[MAG CL6 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
 ItemDisplay[MAG CL7 !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG CL7 !ID FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
+ItemDisplay[MAG CL7 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
 //Remove everything else
 ItemDisplay[MAG WEAPON !ID]:
 
@@ -441,11 +441,11 @@ ItemDisplay[MAG WEAPON !ID]:
 
 //Styling for white items
 ItemDisplay[SUP]: <<BoxStyle>> %BASENAME%%CONTINUE%
-ItemDisplay[ED WEAPON !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[ED WEAPON !WP4 !WP5 !WP6 !WP12 !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[ED (EQ1 OR EQ2 OR EQ3 OR EQ7) !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG WEAPON ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !WP12 ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG (EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG (WEAPON OR EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED=0 !RW]: <<BoxStyle>> %PURPLE%Eth %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) OR EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED=0 !RW]: <<BoxStyle>> %PURPLE%Eth %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG SOCKETS>0 !RW]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 
 //Class 
@@ -486,12 +486,12 @@ ItemDisplay[NMAG CL5 !ETH !RW SKILL(265)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(266)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(266)% %BLUE%Blade Fury%CONTINUE%
 ItemDisplay[NMAG CL5 !ETH !RW SKILL(273)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(273)% %BLUE%Mind Blast%CONTINUE%   
 ItemDisplay[NMAG CL5 !ETH !INF !RW !9xf !9cs !7xf !7cs (SOCKETS=0 OR SOCKETS=3) (SKILL(276)>1 OR SKILL(271)>1 OR SKILL(272)>1 OR SKILL(277)>1 OR SKILL(278)>1 OR SKILL(274)>1 OR SKILL(267)>1 OR SKILL(263)>1 OR SKILL(269)>1 OR SKILL(259)>1 OR SKILL(254)>1 OR SKILL(265)>1 OR SKILL(266)>1 OR SKILL(273)>1)]: <<BoxStyle>> %WHITE%%NAME% 
-ItemDisplay[NMAG CL5 !RW FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG CL5 !RW FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL5 !RW !ETH !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL5 !RW]:
 
 //Sorceress
-ItemDisplay[NMAG CL6 !RW FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG CL6 !RW FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL6 !RW !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL6 !RW]:
 
@@ -505,7 +505,7 @@ ItemDisplay[NMAG CL7 !RW !INF ELT TABSK0>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+
 ItemDisplay[NMAG CL7 !RW !INF ELT TABSK1>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
 ItemDisplay[NMAG CL7 !RW !INF ELT TABSK2>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Skill%CONTINUE%
 ItemDisplay[NMAG CL7 !RW !INF ELT (TABSK0>0 OR TABSK1>0 OR TABSK2>0)]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG CL7 !bal !9b8 !7b8 FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG CL7 !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG CL7 !RW]:
 
 //Armor //Show Superior Armor/Shield bases >3OS Chest and Monarchs
@@ -553,7 +553,7 @@ ItemDisplay[NMAG 7cr !INF !RW (SOCKETS>2 AND SOCKETS<6)]: <<BoxStyle>> %WHITE%%N
 ItemDisplay[NMAG 72h !INF ETH !RW (SOCKETS=0 OR SOCKETS=3)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG 7gd !INF !ETH !RW (SOCKETS=0 OR SOCKETS=5)]: <<BoxStyle>> %WHITE%%NAME%
 //Daggers, Thrown, Javelins are shopfood
-ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW !INF FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW INF FILTERLVL=1]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
@@ -594,7 +594,7 @@ ItemDisplay[NMAG WP11 !RW SKILL("Fire Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %
 ItemDisplay[NMAG WP11 !RW SKILL(58)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(58)% %BLUE%Shield%CONTINUE%
 ItemDisplay[NMAG WP11 !RW !ETH (SKILL(48)>1 OR SKILL(59)>1 OR SKILL(64)>1 OR SKILL(58)>1 OR SKILL("Fire Mastery")>1 OR SKILL("Hydra")>1 OR SKILL("Fire Wall")>1 OR SKILL("Fire Ball")>1 OR SKILL("Meteor")>1 OR SKILL(52) OR SKILL("Warmth")>1 OR SKILL("Lightning Mastery")>1 OR SKILL("Thunder Storm")>1 OR SKILL("Discharge")>1 OR SKILL("Chain Lightning")>1 OR SKILL("Lightning Surge")>1 OR SKILL("Cold Mastery")>1 OR SKILL("Frigerate")>1 OR SKILL("Freezing Pulse")>1 OR SKILL("Frost Nova")>1)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG WP11 !RW ETH (SKILL(48)>1 OR SKILL(59)>1 OR SKILL(64)>1 OR SKILL(58)>1 OR SKILL("Fire Mastery")>1 OR SKILL("Hydra")>1 OR SKILL("Fire Wall")>1 OR SKILL("Fire Ball")>1 OR SKILL("Meteor")>1 OR SKILL(52) OR SKILL("Warmth")>1 OR SKILL("Lightning Mastery")>1 OR SKILL("Thunder Storm")>1 OR SKILL("Discharge")>1 OR SKILL("Chain Lightning")>1 OR SKILL("Lightning Surge")>1 OR SKILL("Cold Mastery")>1 OR SKILL("Frigerate")>1 OR SKILL("Freezing Pulse")>1 OR SKILL("Frost Nova")>1)]: <<BoxStyle>> %GRAY%%NAME%
-ItemDisplay[NMAG WP11 !wst !8ws !6ws !RW FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG WP11 !wst !8ws !6ws !RW FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP11 !wst !8ws !6ws !RW FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP11 !INF !RW FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 //Wands
@@ -620,11 +620,11 @@ ItemDisplay[NMAG WP12 !RW !ETH SKILL("Hemorrhage")>1]: <<BoxStyle>> %WHITE%%NAME
 ItemDisplay[NMAG WP12 !RW !ETH SKILL(84)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(84)% %BLUE%Spear%CONTINUE%
 ItemDisplay[NMAG WP12 !RW !ETH (SKILL(92)>1 OR SKILL(78)>1 OR SKILL(74)>1 OR SKILL(91)>1 OR SKILL(87)>1 OR SKILL(67)>1 OR SKILL(95)>1 OR SKILL("Bone Armor")>1 OR SKILL("Bone Spirit")>1 OR SKILL("Desecrate")>1 OR SKILL("Convocation")>1 OR SKILL("Iron Golem")>1 OR SKILL("Fire Golem")>1 OR SKILL("Clay Golem")>1 OR SKILL("Blood Golem")>1 OR SKILL("Summon Mastery")>1 OR SKILL("Raise Skeleton Warrior")>1 OR SKILL("Raise Skeletal Mage")>1 OR SKILL("Hemorrhage")>1)]: <<BoxStyle>> %WHITE%%NAME%  
 ItemDisplay[NMAG WP12 !RW ETH (SKILL(92)>1 OR SKILL(78)>1 OR SKILL(74)>1 OR SKILL(91)>1 OR SKILL(87)>1 OR SKILL(67)>1 OR SKILL(95)>1 OR SKILL("Bone Armor")>1 OR SKILL("Bone Spirit")>1 OR SKILL("Desecrate")>1 OR SKILL("Convocation")>1 OR SKILL("Iron Golem")>1 OR SKILL("Fire Golem")>1 OR SKILL("Clay Golem")>1 OR SKILL("Blood Golem")>1 OR SKILL("Summon Mastery")>1 OR SKILL("Raise Skeleton Warrior")>1 OR SKILL("Raise Skeletal Mage")>1 OR SKILL("Hemorrhage")>1)]: <<BoxStyle>> %GRAY%%NAME% 
-ItemDisplay[NMAG WP12 !RW FILTERLVL=3 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]   
+ItemDisplay[NMAG WP12 !RW FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]   
 ItemDisplay[NMAG WP12 !RW FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP12 !INF !RW FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 //Scepters
-ItemDisplay[NMAG WP13 !wsp !9ws !7ws !RW FILTERLVL=3 PRICE>24999 SOCKETS<3]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG WP13 !wsp !9ws !7ws !RW FILTERLVL>2 PRICE>24999 SOCKETS<3]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP13 !INF !RW FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 //ItemDisplay[NMAG WP13 !wsp !9ws !7ws !RW FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 //ItemDisplay[NMAG WP13 !INF !RW FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
