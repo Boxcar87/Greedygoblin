@@ -214,9 +214,6 @@ ItemDisplay[gcy]:
 ItemDisplay[skc]:
 
 ////Uniques
-ItemDisplay[UNI ID]: <<BoxStyle>> %GOLD%%NAME%
-ItemDisplay[SET ID]: <<BoxStyle>> %GREEN%%NAME%
-ItemDisplay[SET !ID]: <<BoxStyle>> %GREEN%%NAME%
 
 //Helms
 
@@ -361,6 +358,10 @@ ItemDisplay[UNI !ID amu]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%Amulet ||ø
 ItemDisplay[UNI !ID jew]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Rainbow Facet %GREEN%ø%NL%
 ItemDisplay[UNI !ID cm3]: <<BoxStyle>> %GOLD%Gheed Charm
 ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%ø %GREEN%Amulet %GREEN%ø%NL%
+
+
+ItemDisplay[UNI]: <<BoxStyle>> %GOLD%%NAME%
+ItemDisplay[SET]: <<BoxStyle>> %GREEN%%NAME%
 
 ////Rares
 ItemDisplay[RARE ID]: <<BoxStyle>> %YELLOW%%NAME%
