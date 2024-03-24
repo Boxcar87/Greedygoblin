@@ -61,7 +61,7 @@ ItemDisplay[ma8]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[ma9]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[ma10]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[maz]: <<BoxStyle>> %PURPLE%%NAME%
-ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%øøøSynthesizedøøø %GOLD%%BASENAME%
+ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%øøøSynthesized %ITEMNAME%øøø
 
 //Uber Keys
 ItemDisplay[pk1]: <<BoxStyle>> %PURPLE%Terror [Countess]
