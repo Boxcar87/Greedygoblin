@@ -4,6 +4,12 @@
 ItemStyle[BoxStyle]: BorderSize=2, BorderColor=135
 ItemStyle[AlertStyle]: BorderSize=2, BorderColor=135, NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54
 
+////Levels
+FilterLevel[1]: Level 1
+FilterLevel[2]: Level 2
+FilterLevel[3]: Level 3
+FilterLevel[4]: Level 4
+
 //Gold
 ItemDisplay[GOLD<200 FILTERLVL=1]:
 ItemDisplay[GOLD<1000 (CLVL>19 AND CLVL<70)]:
