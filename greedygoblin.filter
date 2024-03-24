@@ -79,13 +79,13 @@ ItemDisplay[isc]:
 ItemDisplay[wms]:
 ItemDisplay[yps]:
 ItemDisplay[tbk]: <<BoxStyle>> %WHITE%Tome of Town Portal
-ItemDisplay[ibk]: <<BoxStyle>> %WHITE%Tome of Identify {%WHITE%Plus Skills display as%TEAL%:%WHITE% %GREEN%+X%BLUE% Skill%WHITE% Item%NL%%WHITE%Enhanced %DGREEN%dmg%WHITE%/%DGREEN%def %WHITE%displays as%TEAL%: %GREEN%+%BLUE%X%%DGREEN%dmg %WHITE%Item%NL%%WHITE%Sockets display as%TEAL%:%WHITE% Item [%GRAY%X%WHITE%]%NL%%TEAL%General%WHITE%:%NL%%TEAL%lvl %RED%4%WHITE%: Druid/Barb helms are removed%NL%%TEAL%lvl %RED%3%WHITE%: Less %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%armors show(%BLUE%Ammy%WHITE%/%BLUE%Ring%WHITE%/%BLUE%Circ%WHITE%/%YELLOW%Belt%WHITE%/%YELLOW%Boots%WHITE%) %NL%%TEAL%lvl %RED%2%WHITE%: Thrown and +%BLUE%1 %WHITE%wands dispay as [%GOLD%value%WHITE%]%NL%%TEAL%lvl %RED%1%WHITE%: Broken items instead display as [%GOLD%value%WHITE%]%NL%%GREEN%Greedy Goblin %RED%Readme}
+ItemDisplay[ibk]: <<BoxStyle>> %WHITE%Tome of Identify {%WHITE%Plus Skills display as%TEAL%:%WHITE% %GREEN%+X%BLUE% Skill%WHITE% Item%NL%%WHITE%Enhanced %DGREEN%dmg%WHITE%/%DGREEN%def %WHITE%displays as%TEAL%: %GREEN%+%BLUE%X%%DGREEN%dmg %WHITE%Item%NL%%WHITE%Sockets display as%TEAL%:%WHITE% Item [%GRAY%X%WHITE%]%NL%%TEAL%General%WHITE%:%NL%%TEAL%lvl %RED%4%WHITE%: White Druid/Barb helms are removed%NL%%TEAL%lvl %RED%3%WHITE%: Less %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%armors show(%BLUE%Ammy%WHITE%/%BLUE%Ring%WHITE%/%BLUE%Circ%WHITE%/%YELLOW%Belt%WHITE%/%YELLOW%Boots%WHITE%) %NL%%TEAL%lvl %RED%2%WHITE%: Thrown and +%BLUE%1 %WHITE%wands dispay as [%GOLD%value%WHITE%]%NL%%TEAL%lvl %RED%1%WHITE%: Broken items instead display as [%GOLD%value%WHITE%]%NL%%GREEN%Greedy Goblin %RED%Readme}
 ItemDisplay[key]: <<BoxStyle>> %PURPLE%!%GRAY%Key
 ItemDisplay[gpm]:
 ItemDisplay[opm]:
 ItemDisplay[opl]:
 ItemDisplay[ops]:
-ItemDisplay[gps]:W
+ItemDisplay[gps]:
 ItemDisplay[gpl]:
 ItemDisplay[vps FILTERLVL<3]: <<BoxStyle>> %GREEN%!%WHITE%Stamina
 ItemDisplay[vps]:
@@ -441,13 +441,14 @@ ItemDisplay[MAG WEAPON !ID]:
 ////Non-Magic
 
 //Styling for white items
-ItemDisplay[SUP]: <<BoxStyle>> %BASENAME%%CONTINUE%
+ItemDisplay[SUP ED=0]: <<BoxStyle>> %BASENAME%%CONTINUE%
 ItemDisplay[ED WEAPON !WP4 !WP5 !WP6 !WP12 !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[ED (EQ1 OR EQ2 OR EQ3 OR EQ7) !RW]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !WP12 ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG (EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED !RW]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) OR EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED=0 !RW]: <<BoxStyle>> %PURPLE%Eth %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG SOCKETS>0 !RW]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) OR EQ1 OR EQ2 OR EQ3 OR EQ7) ETH ED=0 !RW]: <<BoxStyle>> %PURPLE%Eth %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NMAG SOCKETS>1 !RW FILTERLVL>2]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
+ItemDisplay[NMAG SOCKETS>0 !RW FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 
 //Class 
 
@@ -466,7 +467,6 @@ ItemDisplay[NMAG CL3 !INF !RW (SOCKETS=0 OR SOCKETS=4) ((FILTERLVL>2 RES>34) OR 
 ItemDisplay[NMAG CL3 !RW]:
 
 //Necromancer shields
-ItemDisplay[NMAG WP12 !INF !RW SKILL(84)>2]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%BLUE%Bonespear
 ItemDisplay[NMAG CL4 !RW !INF FILTERLVL<4]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4 !RW]:
 
@@ -512,13 +512,13 @@ ItemDisplay[NMAG CL7 !RW]:
 //Armor //Show Superior Armor/Shield bases >3OS Chest and Monarchs
 
 //Helmets
-ItemDisplay[NMAG EQ1 !RW FILTERLVL<3 SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG EQ1 !RW SOCKETS=2]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Lore%WHITE%: %TAN%Ort%WHITE%|%TAN%Sol}
+ItemDisplay[NMAG EQ1 !INF !RW FILTERLVL<3 SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG EQ1 !INF !RW SOCKETS=2]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Lore%WHITE%: %TAN%Ort%WHITE%|%TAN%Sol}
 //Body Armor
-ItemDisplay[NMAG EQ2 ELT !RW !ETH SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Enigma%WHITE%: %TAN%Jah%WHITE%|%TAN%Ith%WHITE%|%TAN%Ber}
-ItemDisplay[NMAG EQ2 ELT !RW ETH SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem}
-ItemDisplay[NMAG EQ2 ELT !RW SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Chains of Honor%WHITE%: %TAN%Dol%WHITE%|%TAN%Um%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Fortitu%WHITE%: %TAN%El%WHITE%|%TAN%Sol%WHITE%|%TAN%Dol%WHITE%|%TAN%Lo}
-ItemDisplay[NMAG EQ2 ELT !RW SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG EQ2 !INF ELT !RW !ETH SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Enigma%WHITE%: %TAN%Jah%WHITE%|%TAN%Ith%WHITE%|%TAN%Ber}
+ItemDisplay[NMAG EQ2 !INF ELT !RW ETH SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem}
+ItemDisplay[NMAG EQ2 !INF ELT !RW SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Chains of Honor%WHITE%: %TAN%Dol%WHITE%|%TAN%Um%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Fortitu%WHITE%: %TAN%El%WHITE%|%TAN%Sol%WHITE%|%TAN%Dol%WHITE%|%TAN%Lo}
+ItemDisplay[NMAG EQ2 !INF ELT !RW SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG EQ2 !INF !ELT !RW !ETH SOCKETS=3 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Rain%WHITE%: %TAN%Ort%WHITE%|%TAN%Mal%WHITE%|%TAN%Ith %NL%%TEAL%Bone%WHITE%: %TAN%Sol%WHITE%|%TAN%Um%WHITE%|%TAN%Um %NL%%TEAL%Treachery%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Lem %NL%%TEAL%Peace%WHITE%: %TAN%Shael%WHITE%|%TAN%Thul%WHITE%|%TAN%Amn}
 ItemDisplay[NMAG EQ2 !INF !ELT !RW !ETH FILTERLVL<3 SOCKETS=2]: <<BoxStyle>> %WHITE%%NAME%{%TEAL%Smoke%WHITE%: %TAN%Nef%WHITE%|%TAN%Lum %NL%%TEAL%Stealth%WHITE%: %TAN%Tal%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG EQ2 !INF !RW ETH SOCKETS>2]: <<BoxStyle>> %WHITE%%NAME%
@@ -543,8 +543,8 @@ ItemDisplay[NMAG ARMOR !RW !ID]:
 // Show 4OS Flails, >4OS Crystal Swords(all tiers), 5/6 OS Berserker Axe,Spear/Polearm Bases, Faith Merc Base, Memory Bases, and White Bases
 
 //Axes
-ItemDisplay[NMAG 7wa !ETH !RW SOCKETS=5]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%Beast%WHITE%: %TAN%Ber%WHITE%|%TAN%Tir%WHITE%|%TAN%Um%WHITE%|%TAN%Mal%WHITE%|%TAN%Lum %NL%%TEAL%Death%WHITE%: %TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Vex%WHITE%|%TAN%Ort%WHITE%|%TAN%Gul}
-ItemDisplay[NMAG 7wa ETH !RW SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
+ItemDisplay[NMAG 7wa !INF !ETH !RW SOCKETS=5]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%Beast%WHITE%: %TAN%Ber%WHITE%|%TAN%Tir%WHITE%|%TAN%Um%WHITE%|%TAN%Mal%WHITE%|%TAN%Lum %NL%%TEAL%Death%WHITE%: %TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Vex%WHITE%|%TAN%Ort%WHITE%|%TAN%Gul}
+ItemDisplay[NMAG 7wa !INF ETH !RW SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG 7wa !INF !RW (SOCKETS=0 OR SOCKETS>4)]: <<BoxStyle>> %WHITE%%NAME%
 //Flails
 ItemDisplay[NMAG fla !INF !RW !ETH (SOCKETS=4 OR SOCKETS=5)]: <<BoxStyle>> %WHITE%%NAME%
@@ -554,20 +554,20 @@ ItemDisplay[NMAG 7cr !INF !RW (SOCKETS>2 AND SOCKETS<6)]: <<BoxStyle>> %WHITE%%N
 ItemDisplay[NMAG 72h !INF ETH !RW (SOCKETS=0 OR SOCKETS=3)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG 7gd !INF !ETH !RW (SOCKETS=0 OR SOCKETS=5)]: <<BoxStyle>> %WHITE%%NAME%
 //Daggers, Thrown, Javelins are shopfood
-ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
-ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !bal !9b8 !7b8 FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG (WP4 OR WP5 OR WP6 OR glv OR tsp) !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
+ItemDisplay[NMAG (WP4 OR WP5 OR WP6 OR glv OR tsp) !bal !9b8 !7b8 FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW !INF FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG (WP4 OR WP5 OR WP6) !RW INF FILTERLVL=1]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 //Spears and Polearms
-ItemDisplay[NMAG (WP7 OR WP8) !pil !RW !INF SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG (WP7 OR WP8) !pil !tsp !RW !INF SOCKETS=0]: <<BoxStyle>> %WHITE%%NAME%%CONTINUE%
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Malice%WHITE%: %TAN%Ith%WHITE%|%TAN%El%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Insight%WHITE%: %TAN%Ral%WHITE%|%TAN%Tir%WHITE%|%TAN%Tal%WHITE%|%TAN%Sol}
 ItemDisplay[NMAG (WP7 OR WP8) !ELT !RW !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Obedience%WHITE%: %TAN%Hel%WHITE%|%TAN%Ko%WHITE%|%TAN%Thul%WHITE%|%TAN%Eth%WHITE%|%TAN%Fal}
 ItemDisplay[NMAG (WP7 OR WP8) ELT !RW !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Infinty%WHITE%: %TAN%Ber%WHITE%|%TAN%Mal%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Pride%WHITE%: %TAN%Cham%WHITE%|%TAN%Sur%WHITE%|%TAN%Io%WHITE%|%TAN%Lo}
 ItemDisplay[NMAG (WP7 OR WP8) ELT !RW !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
-ItemDisplay[NMAG WP7 ELT !RW !INF SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
+ItemDisplay[NMAG WP7 ELT ETH !RW !INF SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %GRAY%%NAME%%RED% ||øø%NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 OR WP8) !WP6 !WP5 !RW !INF SOCKETS>2 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG (WP7 OR WP8) !WP6 !WP5 ELT ETH !RW !INF (SOCKETS=0 OR SOCKETS>3)]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG (WP7 OR WP8) !WP6 !WP5 ELT ETH !RW !INF (SOCKETS=0 OR SOCKETS>3)]: <<BoxStyle>> %GREEN%ø %GRAY%%NAME% %GREEN%ø
 //Bows
 ItemDisplay[NMAG 6cb !INF ETH !RW (SOCKETS=0 OR SOCKETS=4)]: <<BoxStyle>> %WHITE%%NAME%
 //Crossbows
@@ -589,7 +589,6 @@ ItemDisplay[NMAG WP11 !RW SKILL("Warmth")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%
 ItemDisplay[NMAG WP11 !RW SKILL(52)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(52)% %BLUE%Enflame%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Meteor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Meteor")% %BLUE%Meteor%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Fire Ball")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(47)% %BLUE%Ball%CONTINUE%
-ItemDisplay[NMAG WP11 !RW SKILL("Fire Wall")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Wall")% %BLUE%Wall%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Hydra")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Hydra")% %BLUE%Hydra%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Fire Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL("Fire Mastery")% %BLUE%F-Mastery%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL(58)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(58)% %BLUE%Shield%CONTINUE%
@@ -635,6 +634,9 @@ ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !INF !RW FILTERLVL=2 SOCKETS>1]: <<BoxSty
 
 //Remove everything else
 ItemDisplay[NMAG WEAPON !RW !ID]:
+
+//Some strange bug where some weapons arent identified as a weapon
+ItemDisplay[NMAG glv tsp]:
 
 //Charms //No large charms after 60
 ItemDisplay[MAG cm1 !ID]: <<BoxStyle>> %GREEN%ø %BLUE%Small Charm%GRAY%[%WHITE%%ILVL%%GRAY%] %GREEN%ø
