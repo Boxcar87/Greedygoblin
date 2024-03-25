@@ -623,7 +623,7 @@ ItemDisplay[NMAG WP12 !RW SKILL("Bone Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GR
 ItemDisplay[NMAG WP12 !RW SKILL("Summon Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(69)% %BLUE%Mastery%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Raise Skeleton Warrior")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(70)% %BLUE%Warrior%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Dim Vision")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(71)% %BLUE%Dim%CONTINUE%
-ItemDisplay[NMAG WP12 !RW SKILL(Weaken)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(72)% %BLUE%Weaken%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL("Weaken")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(72)% %BLUE%Weaken%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Deadly Posion")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(73)% %BLUE%Poison%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Corpse Explosion")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(74)% %BLUE%Explosion%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Clay Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(75)% %BLUE%C-Golem%CONTINUE%
