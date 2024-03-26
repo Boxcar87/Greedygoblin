@@ -603,7 +603,7 @@ ItemDisplay[NMAG WP11 !RW SKILL("Meteor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%
 ItemDisplay[NMAG WP11 !RW SKILL("Thunder Storm")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(57)% %BLUE%T-Storm%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL(58)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(58)% %BLUE%Shield%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Blizzard")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(59)% %BLUE%Blizz%CONTINUE%
-ItemDisplay[NMAG WP11 !RW SKILL("CHilling Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(60)% %BLUE%Chilling%CONTINUE%
+ItemDisplay[NMAG WP11 !RW SKILL("Chilling Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(60)% %BLUE%Chilling%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Fire Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(61)% %BLUE%F-Mastery%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Hydra")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(62)% %BLUE%Hydra%CONTINUE%
 ItemDisplay[NMAG WP11 !RW SKILL("Lightning Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(63)% %BLUE%L-Mastery%CONTINUE%
@@ -624,7 +624,7 @@ ItemDisplay[NMAG WP12 !RW SKILL("Summon Mastery")>1]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG WP12 !RW SKILL("Raise Skeleton Warrior")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(70)% %BLUE%Warrior%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Dim Vision")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(71)% %BLUE%Dim%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Weaken")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(72)% %BLUE%Weaken%CONTINUE%
-ItemDisplay[NMAG WP12 !RW SKILL("Deadly Posion")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(73)% %BLUE%Poison%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL("Deadly Poison")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(73)% %BLUE%Poison%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Corpse Explosion")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(74)% %BLUE%Explosion%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Clay Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(75)% %BLUE%C-Golem%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Iron Maiden")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(76)% %BLUE%Maiden%CONTINUE%
@@ -639,7 +639,7 @@ ItemDisplay[NMAG WP12 !RW SKILL("Bone Spear")>1]: <<BoxStyle>> %WHITE%%NAME% %GR
 ItemDisplay[NMAG WP12 !RW SKILL("Blood Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(85)% %BLUE%B-Golem%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Attract")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(86)% %BLUE%Attract%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Decrepify")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(87)% %BLUE%Decrepify%CONTINUE%
-ItemDisplay[NMAG WP12 !RW SKILL("Felsh Offering")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(88)% %BLUE%F-Offering%CONTINUE%
+ItemDisplay[NMAG WP12 !RW SKILL("Flesh Offering")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(88)% %BLUE%F-Offering%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Bone Offering")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(89)% %BLUE%B-Offering%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Iron Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(90)% %BLUE%I-Golem%CONTINUE%
 ItemDisplay[NMAG WP12 !RW SKILL("Lower Resist")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(91)% %BLUE%Lower Res%CONTINUE%
