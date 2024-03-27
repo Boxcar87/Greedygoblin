@@ -2,16 +2,17 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Filter",
 	"patterns": [{
-			"include": "#operator"
-		},
-		{
+		
 			"include": "#number"
 		},
 		{
-			"include": "#influences"
+			"include": "#color"
 		},
 		{
-			"include": "#color"
+			"include": "#operator"
+		},
+		{
+			"include": "#influences"
 		},
 		{
 			"include": "#keywords"
@@ -30,7 +31,7 @@
 		"operator": {
 			"patterns": [{
 				"name": "keyword",
-				"match": "(:|=|<|>|!|%|\"|AND)"
+				"match": "(:|=|<|>|!|%|\"|&&|AND|OR|\\u007C\\u007C)"
 			}]
 		},
 		"number": {
