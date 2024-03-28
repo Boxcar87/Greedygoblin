@@ -1,9 +1,9 @@
-//øØ×«»©®¤ð¦|ÏþÕ¹²³¼½¾¤§÷Òºß¢°  øøø|| A Filter for greedy goblins ||øøø
+//øØ×«»©®¤ð¦|ÏþÕ¹²³¼½¾¤§÷Òºß¢°  øøø|| A Filter for greedy goblins ø
 
 ////Styles
 ItemStyle[BoxStyle]: BorderSize=2, BorderColor=135
-ItemStyle[HighlightStyle<BoxStyle>]: BackgroundColor=105
-ItemStyle[AlertStyle<HighlightStyle>]: NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54
+ItemStyle[HighlightStyle<BoxStyle>]: BackgroundColor=117
+ItemStyle[AlertStyle<BoxStyle>]: NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54, BackgroundColor=75
 
 ////Levels
 FilterLevel[1]: Level 1
@@ -52,9 +52,9 @@ ItemDisplay[toa]: <<BoxStyle>> %PURPLE%Token of Absolution
 ItemDisplay[std]: <<BoxStyle>> %NAME%
 ItemDisplay[cx5]: <<AlertStyle>> %PURPLE%%NAME%
 ItemDisplay[cx6]: <<BoxStyle>> %PURPLE%Diablo's Soulstone
-ItemDisplay[cx7]: <<BoxStyle>> %GREEN%øøø|| %PURPLE%KEY OF CHAOS%RED% ||øøø
-ItemDisplay[MAP]: <<BoxStyle>> %PURPLE%%NAME%
-ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%øøøSynthesized %ITEMNAME%øøø
+ItemDisplay[cx7]: <<BoxStyle>>  %PURPLE%KEY OF CHAOS%RED% 
+ItemDisplay[MAP]: <<AlertStyle>> %PURPLE%%NAME%
+ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%Synthesized %ITEMNAME%
 
 //Uber Keys
 ItemDisplay[pk1]: <<HighlightStyle>> %PURPLE%Terror %WHITE%[%PURPLE%Countess%WHITE%]
@@ -111,20 +111,20 @@ ItemDisplay[r16]: <<BoxStyle>> %TAN%io 16
 ItemDisplay[r17]: <<BoxStyle>> %TAN%Lum 17
 ItemDisplay[r18]: <<BoxStyle>> %TAN%Ko 18
 ItemDisplay[r19]: <<BoxStyle>> %TAN%Fal 19
-ItemDisplay[r20]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%LEM 20%GREEN% ø%NL%%NL%
-ItemDisplay[r21]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%PUL 21%GREEN% ø%NL%%NL%
-ItemDisplay[r22]: <<AlertStyle>> %NL%%GREEN%øø %PURPLE%UM 22%GREEN% øø%NL%%NL%
-ItemDisplay[r23]: <<AlertStyle>> %NL%%GREEN%øø %PURPLE%MAL 23%GREEN% øø%NL%%NL%
-ItemDisplay[r24]: <<AlertStyle>> %NL%%GREEN%øøø %PURPLE%IST 24%GREEN% øøø%NL%%NL%
-ItemDisplay[r25]: <<AlertStyle>> %NL%%GREEN%øøø| %PURPLE%GUL 25%GREEN% |øøø%NL%%NL%
-ItemDisplay[r26]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%VEX 26%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r27]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%OHM 27%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r28]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%LO 28%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r29]: <<AlertStyle>> %NL%%GREEN%øøø||  %PURPLE%SUR 29%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r30]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%BER 30%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r31]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%JAH 31%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r32]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%CHAM 32%GREEN% ||øøø%NL%%NL%
-ItemDisplay[r33]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%ZOD 33%GREEN% ||øøø%NL%%NL%
+ItemDisplay[r20]: <<AlertStyle>> %NL%%PURPLE%LEM 20NL%%NL%
+ItemDisplay[r21]: <<AlertStyle>> %NL%%PURPLE%PUL 21NL%%NL%
+ItemDisplay[r22]: <<AlertStyle>> %NL% %PURPLE%UM 22%NL%%NL%
+ItemDisplay[r23]: <<AlertStyle>> %NL% %PURPLE%MAL 23%NL%%NL%
+ItemDisplay[r24]: <<AlertStyle>> %NL% %PURPLE%IST 24%NL%%NL%
+ItemDisplay[r25]: <<AlertStyle>> %NL% %PURPLE%GUL 25%NL%%NL%
+ItemDisplay[r26]: <<AlertStyle>> %NL% %PURPLE%VEX 26%NL%%NL%
+ItemDisplay[r27]: <<AlertStyle>> %NL% %PURPLE%OHM 27%NL%%NL%
+ItemDisplay[r28]: <<AlertStyle>> %NL% %PURPLE%LO 28%NL%%NL%
+ItemDisplay[r29]: <<AlertStyle>> %NL%  %PURPLE%SUR 29%NL%%NL%
+ItemDisplay[r30]: <<AlertStyle>> %NL% %PURPLE%BER 30%NL%%NL%
+ItemDisplay[r31]: <<AlertStyle>> %NL% %PURPLE%JAH 31%NL%%NL%
+ItemDisplay[r32]: <<AlertStyle>> %NL% %PURPLE%CHAM 32%NL%%NL%
+ItemDisplay[r33]: <<AlertStyle>> %NL% %PURPLE%ZOD 33%NL%%NL%
 
 //Misc quest
 ItemDisplay[QUEST]: <<BoxStyle>> %ORANGE%%NAME%
@@ -146,13 +146,13 @@ ItemDisplay[xyz]: <<BoxStyle>> %TAN%%NAME%
 
 //GEMS
 
-ItemDisplay[gpv]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%PURPLE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpw]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%WHITE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpg]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%GREEN%*%WHITE%| %GREEN%ø
-ItemDisplay[gpr]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%RED%*%WHITE%| %GREEN%ø
-ItemDisplay[gpb]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%BLUE%*%WHITE%| %GREEN%ø
-ItemDisplay[gpy]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%YELLOW%*%WHITE%| %GREEN%ø
-ItemDisplay[skz]: <<BoxStyle>> %GREEN%ø %TEAL%Perfect %WHITE%|%GRAY%*%WHITE%| %GREEN%ø
+ItemDisplay[gpv]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%PURPLE%*%WHITE%| 
+ItemDisplay[gpw]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%WHITE%*%WHITE%| 
+ItemDisplay[gpg]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%GREEN%*%WHITE%| 
+ItemDisplay[gpr]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%RED%*%WHITE%| 
+ItemDisplay[gpb]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%BLUE%*%WHITE%| 
+ItemDisplay[gpy]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%YELLOW%*%WHITE%| 
+ItemDisplay[skz]: <<BoxStyle>> %TEAL%Perfect %WHITE%|%GRAY%*%WHITE%| 
 
 ItemDisplay[gzv]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%PURPLE%*%WHITE%|
 ItemDisplay[glw]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%WHITE%*%WHITE%|
@@ -222,9 +222,9 @@ ItemDisplay[RW]: <<BoxStyle>> %NAME%
 //Helms
 
 //Griffon's Eye
-ItemDisplay[UNIQUE !ID ci3]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Griffon Eye %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID ci3]: <<AlertStyle>> %NL%%PURPLE%Griffon Eye %NL%
 //Shako
-ItemDisplay[UNIQUE !ID uap]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Harlequin Crest %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID uap]: <<AlertStyle>> %NL%%PURPLE%Harlequin Crest %NL%
 //Crown of Ages
 ItemDisplay[UNIQUE !ID urn]: <<BoxStyle>> %PURPLE%Crown of Ages
 //Andariel's Visage
@@ -232,15 +232,15 @@ ItemDisplay[UNIQUE !ID usk]: <<BoxStyle>> %PURPLE%Andariel Visage
 //Vampire Gaze
 ItemDisplay[UNIQUE !ID xh9]: <<BoxStyle>> %PURPLE%Vampire Gaze
 //Arreat's Face
-ItemDisplay[UNIQUE !ID baa]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Arreat Face %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID baa]: <<AlertStyle>> %NL%%PURPLE%Arreat Face %NL%
 //Jalal's Mane
-ItemDisplay[UNIQUE !ID dra]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Jalal Mane %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID dra]: <<AlertStyle>> %NL%%PURPLE%Jalal Mane %NL%
 //Ravenlore
 ItemDisplay[UNIQUE !ID dre]: <<BoxStyle>> %GOLD%Ravenlore
 //Guillaume's Face
 ItemDisplay[SET !ID xhm]: <<BoxStyle>> %GREEN%Guillaume Face
 //STEEL SHADE
-ItemDisplay[UNIQUE !ID ulm]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Steel Shade %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID ulm]: <<AlertStyle>> %NL%%PURPLE%Steel Shade %NL%
 //Trangs Helm
 ItemDisplay[SET !ID uh9]: <<BoxStyle>> %GREEN%Trang-Oul's Helm
 //Stealskull
@@ -249,7 +249,7 @@ ItemDisplay[UNIQUE !ID xlm]: <<BoxStyle>> %GOLD%Stealskull
 //Armor
 
 //Viper Magi
-ItemDisplay[UNIQUE !ID xea]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Skin of the Vipermagi %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID xea]: <<AlertStyle>> %NL%%PURPLE%Skin of the Vipermagi %NL%
 //Naj's Chest
 ItemDisplay[SET !ID ult]: <<BoxStyle>> %GREEN% Naj Chest
 //Duriel's Shell
@@ -263,9 +263,9 @@ ItemDisplay[UNIQUE !ID uar]: <<BoxStyle>> %PURPLE%Tyrael Might
 //Guardian Angel
 ItemDisplay[UNIQUE !ID xlt]: <<BoxStyle>> %PURPLE%Guardian Angel
 //Tal Rasha Armour
-ItemDisplay[SET !ID uth]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Tal Armour %GREEN%ø%NL%
+ItemDisplay[SET !ID uth]: <<AlertStyle>> %NL%%PURPLE%Tal Armour %NL%
 //Immortal King Armour
-ItemDisplay[SET !ID uar]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%IK Armour %GREEN%ø%NL%
+ItemDisplay[SET !ID uar]: <<AlertStyle>> %NL%%PURPLE%IK Armour %NL%
 
 //Gloves
 
@@ -279,7 +279,7 @@ ItemDisplay[UNIQUE !ID umg]: <<BoxStyle>> %GOLD%Soul Drainer
 //Belts
 
 //Arachnid Mesh
-ItemDisplay[UNIQUE !ID ulc]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Arachnid Mesh %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID ulc]: <<AlertStyle>> %NL%%PURPLE%Arachnid Mesh %NL%
 //Verdungo's Hearty Cord
 ItemDisplay[UNIQUE !ID umc]: <<BoxStyle>> %PURPLE%Verdungo
 //String of Ears
@@ -287,12 +287,12 @@ ItemDisplay[UNIQUE !ID zlb]: <<BoxStyle>> %PURPLE%String of Ears
 //Razortail
 ItemDisplay[UNIQUE !ID zvb]: <<BoxStyle>> %PURPLE%Razortail
 //Thundergod's Vigor
-ItemDisplay[UNIQUE !ID zhb]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Thundergods Vigor %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID zhb]: <<AlertStyle>> %NL%%PURPLE%Thundergods Vigor %NL%
 
 //Boots
 
 //War Traveler
-ItemDisplay[UNIQUE !ID xtb]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%War Traveler %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID xtb]: <<AlertStyle>> %NL%%PURPLE%War Traveler %NL%
 //Shadow Dancer
 ItemDisplay[UNIQUE !ID uhb]: <<BoxStyle>> %GOLD%Shadow Dancer
 //Sandstorm Trek
@@ -311,7 +311,7 @@ ItemDisplay[UNIQUE !ID 7gw]: <<BoxStyle>> %PURPLE%Death Web
 //Eschuta's
 ItemDisplay[UNIQUE !ID obc]: <<BoxStyle>> %PURPLE%Eschuta
 //Windforce
-ItemDisplay[UNIQUE !ID 6lw]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Windfore %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID 6lw]: <<AlertStyle>> %NL%%PURPLE%Windfore %NL%
 //Reaper's Toll
 ItemDisplay[UNIQUE !ID 7s8]: <<BoxStyle>> %GOLD%Reaper Toll
 //ETH Reaper's Toll
@@ -340,9 +340,9 @@ ItemDisplay[UNIQUE !ID 7ls]: <<BoxStyle>> %GOLD%Frostwind
 //Shields
 
 //Stormshield
-ItemDisplay[UNIQUE !ID uit]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Stormshield %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID uit]: <<AlertStyle>> %NL%%PURPLE%Stormshield %NL%
 //Homunculus
-ItemDisplay[UNIQUE !ID nea]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Homunculus %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID nea]: <<AlertStyle>> %NL%%PURPLE%Homunculus %NL%
 //Herald of Zakarum
 ItemDisplay[UNIQUE !ID pa9]: <<BoxStyle>> %PURPLE%Herald of Zakarum 
 //Darkforce Spawn
@@ -357,11 +357,11 @@ ItemDisplay[UNIQUE !ID xts]: <<BoxStyle>> %GOLD%Radament Sphere
 ItemDisplay[UNIQUE !ID uml]: <<BoxStyle>> %GOLD%Blackoak
 
 //Jewelry
-ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL%%GREEN%øøø|| %PURPLE%Ring %%GREEN%||øøø%NL%%NL%
-ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%Amulet %%GREEN%||øøø%NL%
-ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Rainbow Facet %GREEN%ø%NL%
+ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL% %PURPLE%Ring %%NL%%NL%
+ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL% %PURPLE%Amulet %%NL%
+ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%PURPLE%Rainbow Facet %NL%
 ItemDisplay[UNIQUE !ID cm3]: <<BoxStyle>> %GOLD%Gheed's Fortune
-ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%ø %GREEN%Amulet %GREEN%ø%NL%%NL%
+ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%Amulet %NL%%NL%
 
 ItemDisplay[!ID (SET || UNIQUE)]: <<BoxStyle>> %NAME%
 ////Rares
@@ -369,11 +369,11 @@ ItemDisplay[!ID (SET || UNIQUE)]: <<BoxStyle>> %NAME%
 //Class
 ItemDisplay[RARE (CL1 || CL2 || CL3 || CL4) !ID]: <<BoxStyle>> %YELLOW%%NAME%
 //Armor
-ItemDisplay[RARE jew !ID]: <<HighlightStyle>> %GREEN%øøø|| %YELLOW%JEWEL %GREEN%||øøø
-ItemDisplay[RARE amu !ID]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
-ItemDisplay[RARE rin !ID]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
+ItemDisplay[RARE jew !ID]: <<HighlightStyle>>  %YELLOW%JEWEL 
+ItemDisplay[RARE amu !ID]: <<HighlightStyle>> %YELLOW%%NAME% 
+ItemDisplay[RARE rin !ID]: <<HighlightStyle>> %YELLOW%%NAME% 
 ItemDisplay[RARE (EQ4 || EQ5 || EQ6) !ID !ETH FILTERLVL>2]: <<BoxStyle>> %YELLOW%%NAME%
-ItemDisplay[RARE EQ7 !ID !ETH]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
+ItemDisplay[RARE EQ7 !ID !ETH]: <<HighlightStyle>> %YELLOW%%NAME% 
 ItemDisplay[RARE ARMOR !ID !ETH FILTERLVL<3]: <<BoxStyle>> %YELLOW%%NAME%
 //Remove everything else
 ItemDisplay[RARE ARMOR !ID]:
@@ -398,7 +398,7 @@ ItemDisplay[MAG (CL1 || CL2 || CL3 || CL4) !ID]: <<BoxStyle>> %BLUE%%NAME%
 //Armor
 ItemDisplay[MAG amu !ID]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG rin !ID]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG jew !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%JEWEL %GREEN%ø
+ItemDisplay[MAG jew !ID]: <<HighlightStyle>> %BLUE%JEWEL 
 ItemDisplay[MAG EQ7 !ID !ETH]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG ARMOR !ID !ETH FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
 //Remove everything else
@@ -421,16 +421,16 @@ ItemDisplay[MAG SOR !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRIC
 ItemDisplay[MAG WEAPON !ID]:
 
 ////Non-Magic
-ItemDisplay[NMAG(NORMAL) !STORAGE(STASH) FILTERLVL=5]:
-ItemDisplay[NMAG(!ELITE) !STORAGE(STASH) FILTERLVL=6]:
+ItemDisplay[NMAG(NORMAL) !CIRC !STORAGE(STASH) FILTERLVL=5]:
+ItemDisplay[NMAG(!ELITE) !CIRC !STORAGE(STASH) FILTERLVL=6]:
 //Styling for white items
-ItemDisplay[SUPERIOR !EQ4 !EQ5 !EQ6 (ED || ED=0 || (WP12 ED>0))]: <<BoxStyle>> %WHITE%%BASENAME%%CONTINUE%
-ItemDisplay[SUPERIOR !EQ4 !EQ5 !EQ6 (ED || ED=0 || (WP12 ED>0)) ETH]: <<BoxStyle>> %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[ED WEAPON !WP4 !WP5 !WP6 !WP12]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
-ItemDisplay[ED (EQ1 || EQ2 || EQ3 || EQ7)]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !WP12 ETH ED]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG (EQ1 || EQ2 || EQ3 || EQ7) ETH ED]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) || EQ1 || EQ2 || EQ3 || EQ7) ETH (ED=0 || !ED)]: <<BoxStyle>> %PURPLE%Eth %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NMAG SUPERIOR !EQ4 !EQ5 !EQ6 (!ED || ED=0 || (WP12 ED>0))]: <<BoxStyle>> %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG SUPERIOR !EQ4 !EQ5 !EQ6 (!ED || ED=0 || (WP12 ED>0)) ETH]: <<BoxStyle>> %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED WEAPON !WP4 !WP5 !WP6 !WP12]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED (EQ1 || EQ2 || EQ3 || EQ7)]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED WEAPON !WP4 !WP5 !WP6 !WP12 ETH]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED (EQ1 || EQ2 || EQ3 || EQ7) ETH]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG (!ED || ED=0) ((WEAPON !WP4 !WP5 !WP6 !WP12) || EQ1 || EQ2 || EQ3 || EQ7) ETH]: <<BoxStyle>> %PURPLE%Eth %GRAY%%NAME%%CONTINUE%
 ItemDisplay[NMAG SOCKETS>1 FILTERLVL>2]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 ItemDisplay[NMAG SOCKETS>0 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 
@@ -527,8 +527,8 @@ ItemDisplay[NMAG ARMOR !ID]:
 // Show 4OS Flails, >4OS Crystal Swords(all tiers), 5/6 OS Berserker Axe,Spear/Polearm Bases, Faith Merc Base, Memory Bases, and White Bases
 
 //Axes
-ItemDisplay[NMAG 7wa !INF !ETH SOCKETS=5]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%Beast%WHITE%: %TAN%Ber%WHITE%|%TAN%Tir%WHITE%|%TAN%Um%WHITE%|%TAN%Mal%WHITE%|%TAN%Lum %NL%%TEAL%Death%WHITE%: %TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Vex%WHITE%|%TAN%Ort%WHITE%|%TAN%Gul}
-ItemDisplay[NMAG 7wa !INF ETH SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %WHITE%%NAME%%RED% ||øø%NL%%CONTINUE%{%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
+ItemDisplay[NMAG 7wa !INF !ETH SOCKETS=5]: <<HighlightStyle>> %NL% %WHITE%%NAME%%RED% %NL%%CONTINUE%{%TEAL%Beast%WHITE%: %TAN%Ber%WHITE%|%TAN%Tir%WHITE%|%TAN%Um%WHITE%|%TAN%Mal%WHITE%|%TAN%Lum %NL%%TEAL%Death%WHITE%: %TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Vex%WHITE%|%TAN%Ort%WHITE%|%TAN%Gul}
+ItemDisplay[NMAG 7wa !INF ETH SOCKETS=6]: <<HighlightStyle>> %NL% %WHITE%%NAME%%RED% %NL%%CONTINUE%{%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG 7wa !INF (SOCKETS=0 || SOCKETS>4)]: <<BoxStyle>> %WHITE%%NAME%
 //Flails
 ItemDisplay[NMAG fla !INF !ETH (SOCKETS=4 || SOCKETS=5)]: <<BoxStyle>> %WHITE%%NAME%
@@ -549,9 +549,9 @@ ItemDisplay[NMAG (WP7 || WP8) !ELT !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %
 ItemDisplay[NMAG (WP7 || WP8) !ELT !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Obedience%WHITE%: %TAN%Hel%WHITE%|%TAN%Ko%WHITE%|%TAN%Thul%WHITE%|%TAN%Eth%WHITE%|%TAN%Fal}
 ItemDisplay[NMAG (WP7 || WP8) ELT !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Infinty%WHITE%: %TAN%Ber%WHITE%|%TAN%Mal%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Pride%WHITE%: %TAN%Cham%WHITE%|%TAN%Sur%WHITE%|%TAN%Io%WHITE%|%TAN%Lo}
 ItemDisplay[NMAG (WP7 || WP8) ELT !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
-ItemDisplay[NMAG WP7 ELT ETH !INF SOCKETS=6]: <<AlertStyle>> %NL%%GREEN%øø|| %GRAY%%NAME%%RED% ||øø%NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
+ItemDisplay[NMAG WP7 ELT ETH !INF SOCKETS=6]: <<AlertStyle>> %NL%|| %GRAY%%NAME%%RED% %NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 !INF SOCKETS>2 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 ELT ETH !INF (SOCKETS=0 || SOCKETS>3)]: <<HighlightStyle>> %GREEN%ø %GRAY%%NAME% %GREEN%ø
+ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 ELT ETH !INF (SOCKETS=0 || SOCKETS>3)]: <<HighlightStyle>> %GRAY%%NAME% 
 //Bows
 ItemDisplay[NMAG 6cb !INF ETH (SOCKETS=0 || SOCKETS=4)]: <<BoxStyle>> %WHITE%%NAME%
 //Crossbows
@@ -578,7 +578,7 @@ ItemDisplay[NMAG (SOR || WP11) SKILL("Teleport")>1]: <<BoxStyle>> %WHITE%%NAME% 
 ItemDisplay[NMAG (SOR || WP11) SKILL("Chain Lightning")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(54)% %BLUE%Chain%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Glacial Spike")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(55)% %BLUE%Spike%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Meteor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(56)% %BLUE%Meteor%CONTINUE%
-ItemDisplay[NMAG (SOR || WP11) SKILL("Thunder Storm")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(57)% %BLUE%T-Storm%CONTINUE%
+ItemDisplay[NMAG (SOR || WP11) SKILL("Discharge")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(57)% %BLUE%Discharge%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL(58)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(58)% %BLUE%Shield%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Blizzard")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(59)% %BLUE%Blizz%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Chilling Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(60)% %BLUE%Chilling%CONTINUE%
@@ -587,7 +587,7 @@ ItemDisplay[NMAG (SOR || WP11) SKILL("Hydra")>1]: <<BoxStyle>> %WHITE%%NAME% %GR
 ItemDisplay[NMAG (SOR || WP11) SKILL("Lightning Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(63)% %BLUE%L-Mastery%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Frozen Orb")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(64)% %BLUE%Orb%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Cold Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(65)% %BLUE%C-Mastery%CONTINUE%
-ItemDisplay[NMAG (SOR || WP11) SKILL("Discharge")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(457)% %BLUE%Discharge%CONTINUE%
+ItemDisplay[NMAG (SOR || WP11) SKILL("Thunder Storm")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(457)% %BLUE%T-Storm%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Freezing Pulse")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(469)% %BLUE%Pulse%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) !ETH (SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG (SOR || WP11) ETH (SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %GRAY%%NAME%
@@ -647,7 +647,7 @@ ItemDisplay[NMAG WEAPON !ID]:
 ItemDisplay[NMAG glv tsp]:
 
 //Charms //No large charms after 60
-ItemDisplay[MAG cm1 !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%Small Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
+ItemDisplay[MAG cm1 !ID]: <<HighlightStyle>> %BLUE%Small Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] 
 ItemDisplay[MAG cm2 !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%Large Charm
 ItemDisplay[MAG cm2 !ID] :
-ItemDisplay[MAG cm3 !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%Grand Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
+ItemDisplay[MAG cm3 !ID]: <<HighlightStyle>> %BLUE%Grand Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] 
