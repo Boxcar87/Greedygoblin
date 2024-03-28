@@ -2,7 +2,9 @@
 
 ////Styles
 ItemStyle[BoxStyle]: BorderSize=2, BorderColor=135
-ItemStyle[AlertStyle]: BorderSize=2, BorderColor=135, NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54
+ItemStyle[HighlightStyle<BoxStyle>]: BackgroundColor=105
+ItemStyle[AlertStyle<HighlightStyle>]: NotificationColor=PURPLE, NotificationSound=3000, NotificationPriority=HIGH, NotificationSoundPriority=HIGH, MapIcon=54
+
 ////Levels
 FilterLevel[1]: Level 1
 FilterLevel[2]: Level 2
@@ -55,9 +57,9 @@ ItemDisplay[MAP]: <<BoxStyle>> %PURPLE%%NAME%
 ItemDisplay[SYNTH]: <<AlertStyle>> %PURPLE%øøøSynthesized %ITEMNAME%øøø
 
 //Uber Keys
-ItemDisplay[pk1]: <<BoxStyle>> %PURPLE%Terror %WHITE%[%PURPLE%Countess%WHITE%]
-ItemDisplay[pk2]: <<BoxStyle>> %PURPLE%Hate %WHITE%[%PURPLE%Summoner%WHITE%]
-ItemDisplay[pk3]: <<BoxStyle>> %PURPLE%Destruction %WHITE%[%PURPLE%Nihlathak%WHITE%]
+ItemDisplay[pk1]: <<HighlightStyle>> %PURPLE%Terror %WHITE%[%PURPLE%Countess%WHITE%]
+ItemDisplay[pk2]: <<HighlightStyle>> %PURPLE%Hate %WHITE%[%PURPLE%Summoner%WHITE%]
+ItemDisplay[pk3]: <<HighlightStyle>> %PURPLE%Destruction %WHITE%[%PURPLE%Nihlathak%WHITE%]
 ItemDisplay[dhn]: <<BoxStyle>> %PURPLE%Diablo's Horn
 ItemDisplay[bey]: <<BoxStyle>> %PURPLE%Baal's Eye
 ItemDisplay[mbr]: <<BoxStyle>> %PURPLE%Mephisto's Brain
@@ -158,7 +160,7 @@ ItemDisplay[glg]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%GREEN%*%WHITE%|
 ItemDisplay[glr]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%RED%*%WHITE%|
 ItemDisplay[glb]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%BLUE%*%WHITE%|
 ItemDisplay[gly]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%YELLOW%*%WHITE%|
-ItemDisplay[skl]: <<BoxStyle>> %TEAL%Flawless %WHITE%|%GRAY%*%WHITE%|
+ItemDisplay[skl]: <<HighlightStyle>> %TEAL%Flawless %WHITE%|%GRAY%*%WHITE%|
 
 ItemDisplay[gsv FILTERLVL<3]: <<BoxStyle>> %NAME%
 ItemDisplay[gsw FILTERLVL<3]: <<BoxStyle>> %NAME%
@@ -358,7 +360,7 @@ ItemDisplay[UNIQUE !ID uml]: <<BoxStyle>> %GOLD%Blackoak
 ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL%%GREEN%øøø|| %PURPLE%Ring %%GREEN%||øøø%NL%%NL%
 ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL%%GREEN%øøø|| %PURPLE%Amulet %%GREEN%||øøø%NL%
 ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%GREEN%ø %PURPLE%Rainbow Facet %GREEN%ø%NL%
-ItemDisplay[UNIQUE !ID cm3]: <<BoxStyle>> %GOLD%Gheed Charm
+ItemDisplay[UNIQUE !ID cm3]: <<BoxStyle>> %GOLD%Gheed's Fortune
 ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%ø %GREEN%Amulet %GREEN%ø%NL%%NL%
 
 ItemDisplay[!ID (SET || UNIQUE)]: <<BoxStyle>> %NAME%
@@ -367,18 +369,18 @@ ItemDisplay[!ID (SET || UNIQUE)]: <<BoxStyle>> %NAME%
 //Class
 ItemDisplay[RARE (CL1 || CL2 || CL3 || CL4) !ID]: <<BoxStyle>> %YELLOW%%NAME%
 //Armor
-ItemDisplay[RARE jew !ID]: <<BoxStyle>> %GREEN%øøø|| %YELLOW%JEWEL %GREEN%||øøø
-ItemDisplay[RARE amu !ID]: <<BoxStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
-ItemDisplay[RARE rin !ID]: <<BoxStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
+ItemDisplay[RARE jew !ID]: <<HighlightStyle>> %GREEN%øøø|| %YELLOW%JEWEL %GREEN%||øøø
+ItemDisplay[RARE amu !ID]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
+ItemDisplay[RARE rin !ID]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
 ItemDisplay[RARE (EQ4 || EQ5 || EQ6) !ID !ETH FILTERLVL>2]: <<BoxStyle>> %YELLOW%%NAME%
-ItemDisplay[RARE EQ7 !ID !ETH]: <<BoxStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
+ItemDisplay[RARE EQ7 !ID !ETH]: <<HighlightStyle>> %GREEN%ø %YELLOW%%NAME% %GREEN%ø
 ItemDisplay[RARE ARMOR !ID !ETH FILTERLVL<3]: <<BoxStyle>> %YELLOW%%NAME%
 //Remove everything else
 ItemDisplay[RARE ARMOR !ID]:
 
 //Weapons are shopfood
 ItemDisplay[RARE SIN JAVELIN(ELITE) !ID]: <<BoxStyle>> %NAME%
-ItemDisplay[RARE ZON JAVELIN(ELITE) !ID]: <<BoxStyle>> %NAME%
+ItemDisplay[RARE ZON JAVELIN !ID]: <<BoxStyle>> %NAME%
 ItemDisplay[RARE WEAPON FILTERLVL<3]: <<BoxStyle>> %NAME%
 ItemDisplay[RARE WP4 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[RARE (WP5 || WP6) !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%] 
@@ -396,13 +398,14 @@ ItemDisplay[MAG (CL1 || CL2 || CL3 || CL4) !ID]: <<BoxStyle>> %BLUE%%NAME%
 //Armor
 ItemDisplay[MAG amu !ID]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG rin !ID]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG jew !ID]: <<BoxStyle>> %GREEN%ø %BLUE%JEWEL %GREEN%ø
+ItemDisplay[MAG jew !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%JEWEL %GREEN%ø
 ItemDisplay[MAG EQ7 !ID !ETH]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG ARMOR !ID !ETH FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
 //Remove everything else
 ItemDisplay[MAG ARMOR !ID]:
 
 //Weapons are shopfood
+ItemDisplay[MAG ZON JAVELIN !ID]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG WEAPON !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG WP4 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[MAG WP5 !bal !9b8 !7b8 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
@@ -414,8 +417,6 @@ ItemDisplay[MAG SIN !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG SIN !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
 ItemDisplay[MAG SOR !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
 ItemDisplay[MAG SOR !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
-ItemDisplay[MAG ZON !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%%NAME%
-ItemDisplay[MAG ZON !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRICE%%WHITE]
 //Remove everything else
 ItemDisplay[MAG WEAPON !ID]:
 
@@ -423,12 +424,13 @@ ItemDisplay[MAG WEAPON !ID]:
 ItemDisplay[NMAG(NORMAL) !STORAGE(STASH) FILTERLVL=5]:
 ItemDisplay[NMAG(!ELITE) !STORAGE(STASH) FILTERLVL=6]:
 //Styling for white items
-ItemDisplay[SUPERIOR !EQ4 !EQ5 !EQ6 (ED || ED=0 || (WP12 ED>0))]: <<BoxStyle>> %BASENAME%%CONTINUE%
+ItemDisplay[SUPERIOR !EQ4 !EQ5 !EQ6 (ED || ED=0 || (WP12 ED>0))]: <<BoxStyle>> %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[SUPERIOR !EQ4 !EQ5 !EQ6 (ED || ED=0 || (WP12 ED>0)) ETH]: <<BoxStyle>> %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[ED WEAPON !WP4 !WP5 !WP6 !WP12]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[ED (EQ1 || EQ2 || EQ3 || EQ7)]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG WEAPON !WP4 !WP5 !WP6 !WP12 ETH ED]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG (EQ1 || EQ2 || EQ3 || EQ7) ETH ED]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
-ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) || EQ1 || EQ2 || EQ3 || EQ7) ETH ED=0]: <<BoxStyle>> %PURPLE%Eth %GRAY%%NAME%%CONTINUE%
+ItemDisplay[NMAG ((WEAPON !WP4 !WP5 !WP6 !WP12) || EQ1 || EQ2 || EQ3 || EQ7) ETH (ED=0 || !ED)]: <<BoxStyle>> %PURPLE%Eth %GRAY%%NAME%%CONTINUE%
 ItemDisplay[NMAG SOCKETS>1 FILTERLVL>2]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 ItemDisplay[NMAG SOCKETS>0 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%%WHITE% [%GRAY%%SOCKETS%%WHITE%]%CONTINUE%
 
@@ -453,7 +455,7 @@ ItemDisplay[NMAG CL4 !INF FILTERLVL<4]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4]:
 
 //Assassin Claws
-ItemDisplay[NMAG SIN !ETH SOCKETS=0]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(str)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(ias)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
+ItemDisplay[NMAG SIN !ETH SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(str)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(ias)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
 ItemDisplay[NMAG SIN !ETH SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(271)% %BLUE%Lightning Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(272)% %BLUE%Inferno Sentry%CONTINUE%
@@ -546,10 +548,10 @@ ItemDisplay[NMAG (WP7 || WP8) !ELT !INF SOCKETS=3]: <<BoxStyle>> %WHITE%%NAME% %
 ItemDisplay[NMAG (WP7 || WP8) !ELT !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Insight%WHITE%: %TAN%Ral%WHITE%|%TAN%Tir%WHITE%|%TAN%Tal%WHITE%|%TAN%Sol}
 ItemDisplay[NMAG (WP7 || WP8) !ELT !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Obedience%WHITE%: %TAN%Hel%WHITE%|%TAN%Ko%WHITE%|%TAN%Thul%WHITE%|%TAN%Eth%WHITE%|%TAN%Fal}
 ItemDisplay[NMAG (WP7 || WP8) ELT !INF SOCKETS=4]: <<BoxStyle>> %WHITE%%NAME% %CONTINUE%{%TEAL%Infinty%WHITE%: %TAN%Ber%WHITE%|%TAN%Mal%WHITE%|%TAN%Ber%WHITE%|%TAN%Ist %NL%%TEAL%Pride%WHITE%: %TAN%Cham%WHITE%|%TAN%Sur%WHITE%|%TAN%Io%WHITE%|%TAN%Lo}
-ItemDisplay[NMAG (WP7 || WP8) ELT !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% %TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
-ItemDisplay[NMAG WP7 ELT ETH !INF SOCKETS=6]: <<BoxStyle>> %NL%%GREEN%øø|| %GRAY%%NAME%%RED% ||øø%NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
+ItemDisplay[NMAG (WP7 || WP8) ELT !INF SOCKETS=5]: <<BoxStyle>> %WHITE%%NAME% {%TEAL%Doom%WHITE%: %TAN%Hel%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um%WHITE%|%TAN%Lo%WHITE%|%TAN%Cham}
+ItemDisplay[NMAG WP7 ELT ETH !INF SOCKETS=6]: <<AlertStyle>> %NL%%GREEN%øø|| %GRAY%%NAME%%RED% ||øø%NL% {%TEAL%BOTD%WHITE%: %TAN%Vex%WHITE%|%TAN%Hel%WHITE%|%TAN%El%WHITE%|%TAN%Eld%WHITE%|%TAN%Zod%WHITE%|%TAN%Eth}
 ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 !INF SOCKETS>2 FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 ELT ETH !INF (SOCKETS=0 || SOCKETS>3)]: <<BoxStyle>> %GREEN%ø %GRAY%%NAME% %GREEN%ø
+ItemDisplay[NMAG (WP7 || WP8) !WP6 !WP5 ELT ETH !INF (SOCKETS=0 || SOCKETS>3)]: <<HighlightStyle>> %GREEN%ø %GRAY%%NAME% %GREEN%ø
 //Bows
 ItemDisplay[NMAG 6cb !INF ETH (SOCKETS=0 || SOCKETS=4)]: <<BoxStyle>> %WHITE%%NAME%
 //Crossbows
@@ -645,7 +647,7 @@ ItemDisplay[NMAG WEAPON !ID]:
 ItemDisplay[NMAG glv tsp]:
 
 //Charms //No large charms after 60
-ItemDisplay[MAG cm1 !ID]: <<BoxStyle>> %GREEN%ø %BLUE%Small Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
+ItemDisplay[MAG cm1 !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%Small Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
 ItemDisplay[MAG cm2 !ID FILTERLVL<3]: <<BoxStyle>> %BLUE%Large Charm
 ItemDisplay[MAG cm2 !ID] :
-ItemDisplay[MAG cm3 !ID]: <<BoxStyle>> %GREEN%ø %BLUE%Grand Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
+ItemDisplay[MAG cm3 !ID]: <<HighlightStyle>> %GREEN%ø %BLUE%Grand Charm%WHITE%[%ORANGE%%ILVL%%WHITE%] %GREEN%ø
