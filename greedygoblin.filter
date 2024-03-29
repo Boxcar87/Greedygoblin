@@ -12,6 +12,10 @@ FilterLevel[3]: Level 3
 FilterLevel[4]: No Class Helms
 FilterLevel[5]: Exceptional Bases
 FilterLevel[6]: Elite Bases
+FilterLevel[7]: Unused
+FilterLevel[8]: Unused
+FilterLevel[9]: Unused
+FilterLevel[10]: Shopping Alerts
 
 //Gold
 ItemDisplay[GOLD<200 FILTERLVL=1]:
@@ -111,8 +115,8 @@ ItemDisplay[r16]: <<BoxStyle>> %TAN%io 16
 ItemDisplay[r17]: <<BoxStyle>> %TAN%Lum 17
 ItemDisplay[r18]: <<BoxStyle>> %TAN%Ko 18
 ItemDisplay[r19]: <<BoxStyle>> %TAN%Fal 19
-ItemDisplay[r20]: <<AlertStyle>> %NL%%PURPLE%LEM 20NL%%NL%
-ItemDisplay[r21]: <<AlertStyle>> %NL%%PURPLE%PUL 21NL%%NL%
+ItemDisplay[r20]: <<AlertStyle>> %NL%%PURPLE%LEM 20%NL%%NL%
+ItemDisplay[r21]: <<AlertStyle>> %NL%%PURPLE%PUL 21%NL%%NL%
 ItemDisplay[r22]: <<AlertStyle>> %NL% %PURPLE%UM 22%NL%%NL%
 ItemDisplay[r23]: <<AlertStyle>> %NL% %PURPLE%MAL 23%NL%%NL%
 ItemDisplay[r24]: <<AlertStyle>> %NL% %PURPLE%IST 24%NL%%NL%
@@ -120,7 +124,7 @@ ItemDisplay[r25]: <<AlertStyle>> %NL% %PURPLE%GUL 25%NL%%NL%
 ItemDisplay[r26]: <<AlertStyle>> %NL% %PURPLE%VEX 26%NL%%NL%
 ItemDisplay[r27]: <<AlertStyle>> %NL% %PURPLE%OHM 27%NL%%NL%
 ItemDisplay[r28]: <<AlertStyle>> %NL% %PURPLE%LO 28%NL%%NL%
-ItemDisplay[r29]: <<AlertStyle>> %NL%  %PURPLE%SUR 29%NL%%NL%
+ItemDisplay[r29]: <<AlertStyle>> %NL% %PURPLE%SUR 29%NL%%NL%
 ItemDisplay[r30]: <<AlertStyle>> %NL% %PURPLE%BER 30%NL%%NL%
 ItemDisplay[r31]: <<AlertStyle>> %NL% %PURPLE%JAH 31%NL%%NL%
 ItemDisplay[r32]: <<AlertStyle>> %NL% %PURPLE%CHAM 32%NL%%NL%
@@ -207,11 +211,6 @@ ItemDisplay[gcr]:
 ItemDisplay[gcb]:
 ItemDisplay[gcy]:
 ItemDisplay[skc]:
-
-ItemDisplay[CRAFT]: <<BoxStyle>> %ORANGE%%NAME%
-ItemDisplay[MAG EQ4 ID !ETH (CSKILLS(ZON,1)>1 || CSKILLS(ZON,2)>1 || CSKILLS(ZON,3)>1 || TABSK50>1)]: <<AlertStyle>> %PURPLE%%NAME%
-ItemDisplay[MAG cm3 ID]: <<BoxStyle>> %NAME% %WHITE%[%ORANGE%%ILVL%%WHITE%]
-ItemDisplay[ID(!NMAG)]: <<BoxStyle>> %NAME%
 
 ////Runewords
 
@@ -390,9 +389,146 @@ ItemDisplay[RARE WP13 !wsp !9ws !7ws !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> 
 //Remove everything else
 ItemDisplay[RARE WEAPON !ID]:
 
+////Shop
+
+///Amazon                                           Bow                  Passive              Jav
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) GLOVES (CSKILLS(ZON, 1)>1 || CSKILLS(ZON, 2)>1 || CSKILLS(ZON, 3)>1)]: <<AlertStyle>> %PURPLE%Amazon Gloves
+
+///Sorceress
+//Fire
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SOR)>1 || CSKILLS(SOR, 1)>2)]
+    ItemDisplay[SKILL("Warmth")>1]: <<AlertStyle>> %PURPLE%Warmth Mod
+    ItemDisplay[SKILL("Fire Ball")>1]: <<AlertStyle>> %PURPLE%Fire Ball Mod
+    ItemDisplay[SKILL("Fire Wall")>1]: <<AlertStyle>> %PURPLE%Fire Wall Mod
+    ItemDisplay[SKILL("Meteor")>1]: <<AlertStyle>> %PURPLE%Meteor Mod
+    ItemDisplay[SKILL(52)>1]: <<AlertStyle>> %PURPLE%Enflame Mod
+    ItemDisplay[SKILL("Inferno")>1]: <<AlertStyle>> %PURPLE%Inferno Mod
+    ItemDisplay[SKILL("Immolate")>1]: <<AlertStyle>> %PURPLE%Immolate Mod
+    ItemDisplay[SKILL("Hydra")>1]: <<AlertStyle>> %PURPLE%Hydra Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Fire Bolt")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Fire Bolt Mod
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL(52)>2 NMAG !SOCKETS=1 SOCKETS<3]: <<AlertStyle>> %PURPLE%Enflame Leaf Base
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Inferno")>2 NMAG !SOCKETS=1 SOCKETS<3]: <<AlertStyle>> %PURPLE%Inferno Leaf Base
+//Lightning
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SOR)>1 || CSKILLS(SOR, 2)>2)]
+    ItemDisplay[SKILL("Nova")>1]: <<AlertStyle>> %PURPLE%Sorc Nova Mod
+    ItemDisplay[SKILL("Discharge")>1]: <<AlertStyle>> %PURPLE%Dischange Mod
+    ItemDisplay[SKILL("Chain Lightning")>1]: <<AlertStyle>> %PURPLE%Chain Lightning Mod
+    ItemDisplay[SKILL("Thunder Storm")>1]: <<AlertStyle>> %PURPLE%Thunderstorm Mod
+    ItemDisplay[SKILL(58)>1]: <<AlertStyle>> %PURPLE%Energy Shield Mod
+    ItemDisplay[SKILL("Lightning Surge")>1]: <<AlertStyle>> %PURPLE%Lightning Surge Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Charged Bolt")>2 AREALVL<10]: <<AlertStyle>> %PURPLE%+3 Charged Bolt Mod
+//Cold
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SOR)>1 || CSKILLS(SOR, 3)>2)]
+    ItemDisplay[SKILL("Frigerate")>1]: <<AlertStyle>> %PURPLE%Frigerate Mod
+    ItemDisplay[SKILL("Frost Nova")>1]: <<AlertStyle>> %PURPLE%Frost Nova Mod
+    ItemDisplay[SKILL("Freezing Pulse")>1]: <<AlertStyle>> %PURPLE%Freezing Pulse Mod
+    ItemDisplay[SKILL("Blizzard")>1]: <<AlertStyle>> %PURPLE%Blizzard Mod
+    ItemDisplay[SKILL("Frozen Orb")>1]: <<AlertStyle>> %PURPLE%Frozen Orb Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Frost Nova")>2 AREALVL<10 CLVL<6]: <<AlertStyle>> %PURPLE%+3 Frost Nova Mod
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Frigerate")>2 AREALVL<10 CLVL<6]: <<AlertStyle>> %PURPLE%+3 Frigerate Mod
+///Necro
+//Curses
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(NEC)>1 || CSKILLS(NEC, 1)>2)]
+    ItemDisplay[SKILL("Hemorrhage")>1]: <<AlertStyle>> %PURPLE%Hemorrhage Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Hemorrhage")>2 AREALVL<10]: <<AlertStyle>> %PURPLE%+3 Hemo Mod
+//PnB
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(NEC)>1 || CSKILLS(NEC, 2)>2)]
+    ItemDisplay[SKILL("Bone Spear")>1]: <<AlertStyle>> %PURPLE%Bone Spear Mod
+    ItemDisplay[SKILL("Bone Spirit")>1]: <<AlertStyle>> %PURPLE%Bone Spirit Mod
+    ItemDisplay[SKILL("Poison Nova")>1]: <<AlertStyle>> %PURPLE%Poison Nova Mod
+    ItemDisplay[SKILL("Corpse Explosion")>1]: <<AlertStyle>> %PURPLE%CE Mod
+    ItemDisplay[SKILL("Bone Armor")>1]: <<AlertStyle>> %PURPLE%Bone Armor Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Teeth")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Teeth Mod
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Bone Spear")>2 NMAG !SOCKETS=1]: <<AlertStyle>> %PURPLE%Bone Spear White Base
+//Summon
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(NEC)>1 || CSKILLS(NEC, 3)>2)]
+    ItemDisplay[SKILL("Raise Skeleton Warrior")>1]: <<AlertStyle>> %PURPLE%Skelly Warrior Mod
+    ItemDisplay[SKILL("Raise Skeletal Mage")>1]: <<AlertStyle>> %PURPLE%%Skelly Mage Mod
+    ItemDisplay[SKILL("Bone Offering")>1]: <<AlertStyle>> %PURPLE%Bone Offering Mod
+    ItemDisplay[SKILL("Flesh Offering")>1]: <<AlertStyle>> %PURPLE%Flesh Offering Mod
+    ItemDisplay[SKILL("Blood Golem")>1]: <<AlertStyle>> %PURPLE%Blood Golem Mod
+    ItemDisplay[SKILL("Iron Golem")>1]: <<AlertStyle>> %PURPLE%Iron Golem Mod
+    ItemDisplay[SKILL("Fire Golem")>1]: <<AlertStyle>> %PURPLE%Fire Golem Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Raise Skeleton Warrior")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Skelly Mod
+
+///Paladin
+//Combat
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(PAL)>1 || CSKILLS(PAL, 1)>2)]
+    ItemDisplay[SKILL("Dashing Strike")>1]: <<AlertStyle>> %PURPLE%Dashing Strike Mod
+    ItemDisplay[SKILL("Fist of the Heavens")>1]: <<AlertStyle>> %PURPLE%Fist of the Heavens Mod
+    ItemDisplay[SKILL("Holy Shield")>1]: <<AlertStyle>> %PURPLE%Holy Shield Mod
+    ItemDisplay[SKILL("Blessed Hammer")>1]: <<AlertStyle>> %PURPLE%Blessed Hammer Mod
+    ItemDisplay[SKILL("Holy Bolt")>1]: <<AlertStyle>> %PURPLE%Holy Bolt Mod
+    ItemDisplay[SKILL("Charge")>1]: <<AlertStyle>> %PURPLE%Charge Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Holy Bolt")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Holy Bolt Mod
+//Offensive
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(PAL)>1 || CSKILLS(PAL, 2)>2)]
+    ItemDisplay[SKILL("Fanaticism")>1]: <<AlertStyle>> %PURPLE%Fanaticism Mod
+    ItemDisplay[SKILL("Conviction")>1]: <<AlertStyle>> %PURPLE%Convicition Mod
+    ItemDisplay[SKILL("Holy Shock")>1]: <<AlertStyle>> %PURPLE%Holy Shock Mod
+    ItemDisplay[SKILL("Holy Fire")>1]: <<AlertStyle>> %PURPLE%Holy Fire Mod
+    ItemDisplay[SKILL("Holy Freeze")>1]: <<AlertStyle>> %PURPLE%Holy Freeze Mod
+    ItemDisplay[SKILL("Concentration")>1]: <<AlertStyle>> %PURPLE%Concentration Mod
+    ItemDisplay[SKILL("Might")>1]: <<AlertStyle>> %PURPLE%Might Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Might")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Might Mod
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) SKILL("Holy Fire")>2 AREALVL<10 REQLEVEL<=6]: <<AlertStyle>> %PURPLE%+3 Holy Fire Mod
+//Defensive
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(PAL)>1 || CSKILLS(PAL, 3)>2)]
+    ItemDisplay[SKILL("Redemption")>1]: <<AlertStyle>> %PURPLE%Redemption Mod
+    ItemDisplay[SKILL("Salvation")>1]: <<AlertStyle>> %PURPLE%Salvation Mod
+    ItemDisplay[SKILL("Vigor")>1]: <<AlertStyle>> %PURPLE%Vigor Mod
+    ItemDisplay[SKILL("Cleansing")>1]: <<AlertStyle>> %PURPLE%Cleansing Mod
+    ItemDisplay[SKILL("Meditation")>1]: <<AlertStyle>> %PURPLE%Meditation Mod
+EndIf[]
+
+///Barb
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) WEAPON SKILL("Battle Orders")>1]: <<AlertStyle>> %PURPLE%Battle Order Mod
+
+///Assassin
+//Traps
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SIN)>1 || CSKILLS(SIN, 1)>2)]
+    ItemDisplay[SKILL("Wake of Fire")>1]: <<AlertStyle>> %PURPLE%Wake of Fire Mod
+    ItemDisplay[SKILL("Wake of Inferno")>1]: <<AlertStyle>> %PURPLE%Wake of Inferno Mod
+    ItemDisplay[SKILL("Lightning Sentry")>1]: <<AlertStyle>> %PURPLE%Lightning Sentry Mod
+    ItemDisplay[SKILL("Death Sentry")>1]: <<AlertStyle>> %PURPLE%Death Sentry Mod
+    ItemDisplay[SKILL("Blade Shield")>1]: <<AlertStyle>> %PURPLE%Blade Shield Mod
+EndIf[]
+//Shadow Disciplines
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SIN)>1 || CSKILLS(SIN, 2)>2)]
+    ItemDisplay[SKILL("Venom")>1]: <<AlertStyle>> %PURPLE%Venom Mod
+    ItemDisplay[SKILL("Fade")>1]: <<AlertStyle>> %PURPLE%Fade Mod
+    ItemDisplay[SKILL("Cloak of Shadows")>1]: <<AlertStyle>> %PURPLE%Cloak of Shadows Mod
+    ItemDisplay[SKILL("Shadow Warrior")>1]: <<AlertStyle>> %PURPLE%Shadow Warrior Mod
+    ItemDisplay[SKILL("Mind Blast")>1]: <<AlertStyle>> %PURPLE%Mind Blast Mod
+    ItemDisplay[SKILL("Burst of Speed")>1]: <<AlertStyle>> %PURPLE%Burst of Speed Mod
+EndIf[]
+//Martial Arts
+EnableIf[FILTERLVL=10 STORAGE(SHOP) (CSKILLS(SIN)>1 || CSKILLS(SIN, 3)>2)]
+    ItemDisplay[SKILL("Tiger Strike")>1]: <<AlertStyle>> %PURPLE%Tiger Strike Mod
+    ItemDisplay[SKILL("Fists of Fire")>1]: <<AlertStyle>> %PURPLE%Fists of Fire Mod
+    ItemDisplay[SKILL("Cobra Strike")>1]: <<AlertStyle>> %PURPLE%Cobra Strike Mod
+    ItemDisplay[SKILL("Claws of Thunder")>1]: <<AlertStyle>> %PURPLE%Claws of Thunder Mod
+    ItemDisplay[SKILL("Blades of Ice")>1]: <<AlertStyle>> %PURPLE%Blades of Ice Mod
+EndIf[]
+ItemDisplay[FILTERLVL=10 STORAGE(SHOP) GLOVES CSKILLS(SIN, 3)>1]: <<AlertStyle>> %PURPLE%Assassin Gloves
+
+////Identified stuff
+ItemDisplay[CRAFT]: <<BoxStyle>> %ORANGE%%NAME%
+ItemDisplay[MAG cm3 ID]: <<BoxStyle>> %NAME% %WHITE%[%ORANGE%%ILVL%%WHITE%]
+ItemDisplay[ID(!NMAG)]: <<BoxStyle>> %NAME%
+
 ////Magic
 
 //Class
+
 ItemDisplay[MAG (CL1 || CL2 || CL3 || CL4) !ID]: <<BoxStyle>> %BLUE%%NAME%
 
 //Armor
@@ -455,22 +591,25 @@ ItemDisplay[NMAG CL4 !INF FILTERLVL<4]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG CL4]:
 
 //Assassin Claws
+ItemDisplay[NMAG WP12 CSKILLS(SIN, 1)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Traps%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(SIN, 2)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Shadow%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(SIN, 3)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Martial%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%WHITE%: %TAN%Fal%WHITE%|%TAN%Ohm%WHITE%|%TAN%Um %NL%%TEAL%Plague(str)%WHITE%: %TAN%Cham%WHITE%|%TAN%Fal%WHITE%|%TAN%Um %NL%%TEAL%Plague(ias)%WHITE%: %TAN%Cham%WHITE%|%TAN%Shael%WHITE%|%TAN%Um}
 ItemDisplay[NMAG SIN !ETH SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(271)% %BLUE%Lightning Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(272)% %BLUE%Inferno Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(277)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(277)% %BLUE%Blade Shield%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(278)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(278)% %BLUE%Venom%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(274)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(274)% %BLUE%Blades of Ice%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(267)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(267)% %BLUE%Fade%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(263)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(263)% %BLUE%Weapon Block%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(269)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(269)% %BLUE%Claws of Thunder%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(259)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(259)% %BLUE%Fists of Fire%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(254)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(254)% %BLUE%Tiger Strike%CONTINUE% 
 ItemDisplay[NMAG SIN !ETH SKILL(265)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(265)% %BLUE%Cobra Strike%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(274)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(274)% %BLUE%Blades of Ice%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(266)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(266)% %BLUE%Blade Fury%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(273)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(273)% %BLUE%Mind Blast%CONTINUE%   
-ItemDisplay[NMAG SIN !ETH !INF !9xf !9cs !7xf !7cs (SOCKETS=0 || SOCKETS=3) (SKILL(276)>1 || SKILL(271)>1 || SKILL(272)>1 || SKILL(277)>1 || SKILL(278)>1 || SKILL(274)>1 || SKILL(267)>1 || SKILL(263)>1 || SKILL(269)>1 || SKILL(259)>1 || SKILL(254)>1 || SKILL(265)>1 || SKILL(266)>1 || SKILL(273)>1)]: <<BoxStyle>> %WHITE%%NAME% 
+ItemDisplay[NMAG SIN !ETH !INF !9xf !9cs !7xf !7cs (SOCKETS=0 || SOCKETS=3) (CSKILLS(SIN, 1) || CSKILLS(SIN, 2) || CSKILLS(SIN, 3) || SKILL(276)>1 || SKILL(271)>1 || SKILL(272)>1 || SKILL(277)>1 || SKILL(278)>1 || SKILL(274)>1 || SKILL(267)>1 || SKILL(263)>1 || SKILL(269)>1 || SKILL(259)>1 || SKILL(254)>1 || SKILL(265)>1 || SKILL(266)>1 || SKILL(273)>1)]: <<BoxStyle>> %WHITE%%NAME% 
 ItemDisplay[NMAG SIN FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG SIN !ETH !INF FILTERLVL<3]: <<BoxStyle>> %WHITE%%NAME%
 ItemDisplay[NMAG SIN]:
@@ -492,6 +631,14 @@ ItemDisplay[NMAG ZON !INF ELT CSKILLS(ZON, 3)>0]: <<BoxStyle>> %WHITE%%NAME% %GR
 ItemDisplay[NMAG ZON !INF ELT (CSKILLS(ZON, 1)>0 || CSKILLS(ZON, 2)>0 || CSKILLS(ZON,3 )>0)]: <<BoxStyle>> %NAME%
 ItemDisplay[NMAG ZON !bal !9b8 !7b8 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG ZON]:
+
+//PaladinSIN
+ItemDisplay[NMAG WP12 CSKILLS(PAL, 1)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Combat%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(PAL, 2)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Offensive%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(PAL, 3)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Defensive%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL("Holy Fire")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(102)% %BLUE%Fade%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL("Holy Shock")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(118)% %BLUE%Fade%CONTINUE%
+ItemDisplay[NMAG SIN !ETH !INF (CSKILLS(PAL, 1) || CSKILLS(PAL, 2) || CSKILLS(PAL, 3) || SKILL(102)>1 || SKILL(102)>1)]: <<BoxStyle>> %WHITE%%NAME%
 
 //Armor //Show Superior Armor/Shield bases >3OS Chest and Monarchs
 
@@ -557,6 +704,9 @@ ItemDisplay[NMAG 6cb !INF ETH (SOCKETS=0 || SOCKETS=4)]: <<BoxStyle>> %WHITE%%NA
 //Crossbows
 
 //Staves
+ItemDisplay[NMAG WP12 CSKILLS(SOR, 1)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Fire%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(SOR, 2)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Lightning%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(SOR, 3)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Cold%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Fire Bolt")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(36)% %BLUE%F-Bolt%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Warmth")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(37)% %BLUE%Warmth%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Charged Bolt")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(38)% %BLUE%C-Bolt%CONTINUE%
@@ -589,12 +739,15 @@ ItemDisplay[NMAG (SOR || WP11) SKILL("Frozen Orb")>1]: <<BoxStyle>> %WHITE%%NAME
 ItemDisplay[NMAG (SOR || WP11) SKILL("Cold Mastery")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(65)% %BLUE%C-Mastery%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Thunder Storm")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(457)% %BLUE%T-Storm%CONTINUE%
 ItemDisplay[NMAG (SOR || WP11) SKILL("Freezing Pulse")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(469)% %BLUE%Pulse%CONTINUE%
-ItemDisplay[NMAG (SOR || WP11) !ETH (SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %WHITE%%NAME%
-ItemDisplay[NMAG (SOR || WP11) ETH (SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %GRAY%%NAME%
+ItemDisplay[NMAG (SOR || WP11) !ETH (CSKILLS(SOR, 1) || CSKILLS(SOR, 2) || CSKILLS(SOR, 3) || SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %WHITE%%NAME%
+ItemDisplay[NMAG (SOR || WP11) ETH (CSKILLS(SOR, 1) || CSKILLS(SOR, 2) || CSKILLS(SOR, 3) || SKILL(36)>1 || SKILL(37)>1 || SKILL(38)>1 || SKILL(39)>1 || SKILL(40)>1 || SKILL(41)>1 || SKILL(42)>1 || SKILL(43)>1 || SKILL(44)>1 || SKILL(45)>1 || SKILL(46)>1 || SKILL(47)>1 || SKILL(48)>1 || SKILL(49)>1 || SKILL(50)>1 || SKILL(51)>1 || SKILL(52)>1 || SKILL(53)>1 || SKILL(54)>1 || SKILL(55)>1 || SKILL(56)>1 || SKILL(57)>1 || SKILL(58)>1 || SKILL(59)>1 || SKILL(60)>1 || SKILL(61)>1 || SKILL(62)>1 || SKILL(63)>1 || SKILL(64)>1 || SKILL(65)>1 || SKILL(457)>1 || SKILL(469)>1)]: <<BoxStyle>> %GRAY%%NAME%
 ItemDisplay[NMAG (SOR || WP11) !wst !8ws !6ws FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (SOR || WP11) !wst !8ws !6ws FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG (SOR || WP11) !INF FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
 //Wands
+ItemDisplay[NMAG WP12 CSKILLS(NEC, 1)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Curses%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(NEC, 2)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%PnB%CONTINUE%
+ItemDisplay[NMAG WP12 CSKILLS(NEC, 3)]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+ %BLUE%Summon%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Amplify Damage")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(66)% %BLUE%Amp%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Teeth")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(67)% %BLUE%Teeth%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Bone Armor")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(68)% %BLUE%Armor%CONTINUE%
@@ -623,11 +776,11 @@ ItemDisplay[NMAG WP12 SKILL("Iron Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%
 ItemDisplay[NMAG WP12 SKILL("Lower Resist")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(91)% %BLUE%Lower Res%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Poison Nova")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(92)% %BLUE%Nova%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Bone Spirit")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(93)% %BLUE%Spirit%CONTINUE%
-ItemDisplay[NMAG WP12 SKILL("Fire Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(94)% %BLUE%Reive%CONTINUE%
-ItemDisplay[NMAG WP12 SKILL("Revive")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(95)% %BLUE%Desecrate%CONTINUE%
+ItemDisplay[NMAG WP12 SKILL("Fire Golem")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(94)% %BLUE%F-Golem%CONTINUE%
+ItemDisplay[NMAG WP12 SKILL("Revive")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(95)% %BLUE%Revive%CONTINUE%
 ItemDisplay[NMAG WP12 SKILL("Hemorrhage")>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(477)% %BLUE%Hemo%CONTINUE%
-ItemDisplay[NMAG WP12 !ETH (SKILL(66)>1 || SKILL(67)>1 || SKILL(68)>1 || SKILL(69)>1 || SKILL(70)>1 || SKILL(71)>1 || SKILL(72)>1 || SKILL(73)>1 || SKILL(74)>1 || SKILL(75)>1 || SKILL(76)>1 || SKILL(77)>1 || SKILL(78)>1 || SKILL(79)>1 || SKILL(80)>1 || SKILL(81)>1 || SKILL(82)>1 || SKILL(83)>1 || SKILL(84)>1 || SKILL(85)>1 || SKILL(86)>1 || SKILL(87)>1 || SKILL(88)>1 || SKILL(89)>1 || SKILL(90)>1 || SKILL(91)>1 || SKILL(92)>1 || SKILL(93)>1 || SKILL(94)>1 || SKILL(95)>1 || SKILL(477)>1)]: <<BoxStyle>> %WHITE%%NAME%  
-ItemDisplay[NMAG WP12 ETH (SKILL(66)>1 || SKILL(67)>1 || SKILL(68)>1 || SKILL(69)>1 || SKILL(70)>1 || SKILL(71)>1 || SKILL(72)>1 || SKILL(73)>1 || SKILL(74)>1 || SKILL(75)>1 || SKILL(76)>1 || SKILL(77)>1 || SKILL(78)>1 || SKILL(79)>1 || SKILL(80)>1 || SKILL(81)>1 || SKILL(82)>1 || SKILL(83)>1 || SKILL(84)>1 || SKILL(85)>1 || SKILL(86)>1 || SKILL(87)>1 || SKILL(88)>1 || SKILL(89)>1 || SKILL(90)>1 || SKILL(91)>1 || SKILL(92)>1 || SKILL(93)>1 || SKILL(94)>1 || SKILL(95)>1 || SKILL(477)>1)]: <<BoxStyle>> %GRAY%%NAME% 
+ItemDisplay[NMAG WP12 !ETH (CSKILLS(NEC, 1) || CSKILLS(NEC, 2) || CSKILLS(NEC, 3) || SKILL(66)>1 || SKILL(67)>1 || SKILL(68)>1 || SKILL(69)>1 || SKILL(70)>1 || SKILL(71)>1 || SKILL(72)>1 || SKILL(73)>1 || SKILL(74)>1 || SKILL(75)>1 || SKILL(76)>1 || SKILL(77)>1 || SKILL(78)>1 || SKILL(79)>1 || SKILL(80)>1 || SKILL(81)>1 || SKILL(82)>1 || SKILL(83)>1 || SKILL(84)>1 || SKILL(85)>1 || SKILL(86)>1 || SKILL(87)>1 || SKILL(88)>1 || SKILL(89)>1 || SKILL(90)>1 || SKILL(91)>1 || SKILL(92)>1 || SKILL(93)>1 || SKILL(94)>1 || SKILL(95)>1 || SKILL(477)>1)]: <<BoxStyle>> %WHITE%%NAME%  
+ItemDisplay[NMAG WP12 ETH (CSKILLS(NEC, 1) || CSKILLS(NEC, 2) || CSKILLS(NEC, 3) || SKILL(66)>1 || SKILL(67)>1 || SKILL(68)>1 || SKILL(69)>1 || SKILL(70)>1 || SKILL(71)>1 || SKILL(72)>1 || SKILL(73)>1 || SKILL(74)>1 || SKILL(75)>1 || SKILL(76)>1 || SKILL(77)>1 || SKILL(78)>1 || SKILL(79)>1 || SKILL(80)>1 || SKILL(81)>1 || SKILL(82)>1 || SKILL(83)>1 || SKILL(84)>1 || SKILL(85)>1 || SKILL(86)>1 || SKILL(87)>1 || SKILL(88)>1 || SKILL(89)>1 || SKILL(90)>1 || SKILL(91)>1 || SKILL(92)>1 || SKILL(93)>1 || SKILL(94)>1 || SKILL(95)>1 || SKILL(477)>1)]: <<BoxStyle>> %GRAY%%NAME% 
 ItemDisplay[NMAG WP12 FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]   
 ItemDisplay[NMAG WP12 FILTERLVL=2 PRICE>9999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
 ItemDisplay[NMAG WP12 !INF FILTERLVL=1]: <<BoxStyle>> %WHITE%%NAME%
