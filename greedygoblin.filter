@@ -30,16 +30,16 @@ ItemDisplay[mp5]: <<BoxStyle>> %BLUE%M%WHITE%5
 ItemDisplay[rvs]: <<BoxStyle>> %PURPLE%r%WHITE%35%
 ItemDisplay[hp1 FILTERLVL=1]: <<BoxStyle>> %RED%H%WHITE%1
 ItemDisplay[hp2 FILTERLVL=1]: <<BoxStyle>> %RED%H%WHITE%2
-ItemDisplay[hp3 FILTERLVL=2]: <<BoxStyle>> %RED%H%WHITE%3
-ItemDisplay[hp4 FILTERLVL=2]: <<BoxStyle>> %RED%H%WHITE%4
+ItemDisplay[hp3 FILTERLVL<=2]: <<BoxStyle>> %RED%H%WHITE%3
+ItemDisplay[hp4 FILTERLVL<=2]: <<BoxStyle>> %RED%H%WHITE%4
 ItemDisplay[hp1]:
 ItemDisplay[hp2]:
 ItemDisplay[hp3]:
 ItemDisplay[hp4]:
 ItemDisplay[mp1 FILTERLVL=1]: <<BoxStyle>> %BLUE%M%WHITE%1
 ItemDisplay[mp2 FILTERLVL=1]: <<BoxStyle>> %BLUE%M%WHITE%2
-ItemDisplay[mp3 FILTERLVL=2]: <<BoxStyle>> %BLUE%M%WHITE%3
-ItemDisplay[mp4 FILTERLVL=2]: <<BoxStyle>> %BLUE%M%WHITE%4
+ItemDisplay[mp3 FILTERLVL<=2]: <<BoxStyle>> %BLUE%M%WHITE%3
+ItemDisplay[mp4 FILTERLVL<=2]: <<BoxStyle>> %BLUE%M%WHITE%4
 ItemDisplay[mp1]:
 ItemDisplay[mp2]:
 ItemDisplay[mp3]:
@@ -556,7 +556,9 @@ ItemDisplay[NMAG(!ELITE) !CIRC !STORAGE(STASH) FILTERLVL=6]:
 //Styling for white items
 ItemDisplay[NMAG SUPERIOR !EQ4 !EQ5 !EQ6 (!ED || ED=0 || (WP12 ED>0))]: <<BoxStyle>> %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG SUPERIOR !EQ4 !EQ5 !EQ6 (!ED || ED=0 || (WP12 ED>0)) ETH]: <<BoxStyle>> %GRAY%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED WEAPON FILTERLVL<3]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG ED WEAPON !WP4 !WP5 !WP6 !WP12]: <<BoxStyle>> %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %WHITE%%BASENAME%%CONTINUE%
+ItemDisplay[NMAG ED ARMOR FILTERLVL<3]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG ED (EQ1 || EQ2 || EQ3 || EQ7)]: <<BoxStyle>> %GREEN%+%BLUE%%EDEFENSE%%%DGREEN%def %WHITE%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG ED WEAPON !WP4 !WP5 !WP6 !WP12 ETH]: <<BoxStyle>> %PURPLE%Eth %GREEN%+%BLUE%%EDAMAGE%%%DGREEN%dmg %GRAY%%BASENAME%%CONTINUE%
 ItemDisplay[NMAG ED (EQ1 || EQ2 || EQ3 || EQ7) ETH]: <<BoxStyle>> %PURPLE%Eth %DGREEN%+%BLUE%%EDEFENSE%%DGREEN%%%BLUE%def %GRAY%%BASENAME%%CONTINUE%
@@ -592,15 +594,15 @@ ItemDisplay[NMAG SIN !ETH SOCKETS=3]: <<BoxStyle>> %NAME%%CONTINUE%{%TEAL%Chaos%
 ItemDisplay[NMAG SIN !ETH SKILL(276)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(276)% %BLUE%Death Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(271)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(271)% %BLUE%Lightning Sentry%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(272)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(272)% %BLUE%Inferno Sentry%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(277)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(277)% %BLUE%Blade Shield%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(278)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(278)% %BLUE%Venom%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(267)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(267)% %BLUE%Fade%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(277)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(277)% %BLUE%Blade Shield%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(278)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(278)% %BLUE%Venom%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(267)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(267)% %BLUE%Fade%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(263)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(263)% %BLUE%Weapon Block%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(269)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(269)% %BLUE%Claws of Thunder%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(259)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(259)% %BLUE%Fists of Fire%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(254)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(254)% %BLUE%Tiger Strike%CONTINUE% 
-ItemDisplay[NMAG SIN !ETH SKILL(265)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(265)% %BLUE%Cobra Strike%CONTINUE%
-ItemDisplay[NMAG SIN !ETH SKILL(274)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(274)% %BLUE%Blades of Ice%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(269)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(269)% %BLUE%Claws of Thunder%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(259)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(259)% %BLUE%Fists of Fire%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(254)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(254)% %BLUE%Tiger Strike%CONTINUE% 
+ItemDisplay[NMAG SIN !ETH SKILL(265)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(265)% %BLUE%Cobra Strike%CONTINUE%
+ItemDisplay[NMAG SIN !ETH SKILL(274)>0]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(274)% %BLUE%Blades of Ice%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(266)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(266)% %BLUE%Blade Fury%CONTINUE%
 ItemDisplay[NMAG SIN !ETH SKILL(273)>1]: <<BoxStyle>> %WHITE%%NAME% %GREEN%+%SKILL(273)% %BLUE%Mind Blast%CONTINUE%   
 ItemDisplay[NMAG SIN !ETH !INF !9xf !9cs !7xf !7cs (SOCKETS=0 || SOCKETS=3) (CSKILLS(SIN, 1) || CSKILLS(SIN, 2) || CSKILLS(SIN, 3) || SKILL(276)>1 || SKILL(271)>1 || SKILL(272)>1 || SKILL(277)>1 || SKILL(278)>1 || SKILL(274)>1 || SKILL(267)>1 || SKILL(263)>1 || SKILL(269)>1 || SKILL(259)>1 || SKILL(254)>1 || SKILL(265)>1 || SKILL(266)>1 || SKILL(273)>1)]: <<BoxStyle>> %WHITE%%NAME% 
