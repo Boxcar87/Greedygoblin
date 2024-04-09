@@ -356,9 +356,9 @@ ItemDisplay[UNIQUE !ID xts]: <<BoxStyle>> %GOLD%Radament Sphere
 ItemDisplay[UNIQUE !ID uml]: <<BoxStyle>> %GOLD%Blackoak
 
 //Jewelry
-ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL% %PURPLE%Ring %%NL%%NL%
-ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL% %PURPLE%Amulet %%NL%
-ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%PURPLE%Rainbow Facet %NL%
+ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL% %PURPLE%Ring %%NL%%NL%%NL%
+ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL% %PURPLE%Amulet %NL%%NL%
+ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%PURPLE%Rainbow Facet %NL%%NL%
 ItemDisplay[UNIQUE !ID cm3]: <<BoxStyle>> %GOLD%Gheed's Fortune
 ItemDisplay[SET !ID amu]: <<AlertStyle>> %NL%%GREEN%Amulet %NL%%NL%
 
