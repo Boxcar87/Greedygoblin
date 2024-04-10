@@ -356,7 +356,7 @@ ItemDisplay[UNIQUE !ID xts]: <<BoxStyle>> %GOLD%Radament Sphere
 ItemDisplay[UNIQUE !ID uml]: <<BoxStyle>> %GOLD%Blackoak
 
 //Jewelry
-ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL% %PURPLE%Ring %%NL%%NL%%NL%
+ItemDisplay[UNIQUE !ID rin]: <<AlertStyle>> %NL%%NL% %PURPLE%Ring %NL%%NL%%NL%
 ItemDisplay[UNIQUE !ID amu]: <<AlertStyle>> %NL% %PURPLE%Amulet %NL%%NL%
 ItemDisplay[UNIQUE !ID jew]: <<AlertStyle>> %NL%%PURPLE%Rainbow Facet %NL%%NL%
 ItemDisplay[UNIQUE !ID cm3]: <<BoxStyle>> %GOLD%Gheed's Fortune
@@ -378,7 +378,7 @@ ItemDisplay[RARE ARMOR !ID !ETH FILTERLVL<3]: <<BoxStyle>> %YELLOW%%NAME%
 ItemDisplay[RARE ARMOR !ID]:
 
 //Weapons are shopfood
-ItemDisplay[RARE SIN JAVELIN(ELITE) !ID]: <<BoxStyle>> %NAME%
+ItemDisplay[RARE SIN(ELITE) !ID]: <<BoxStyle>> %NAME%
 ItemDisplay[RARE ZON JAVELIN !ID]: <<BoxStyle>> %NAME%
 ItemDisplay[RARE WEAPON FILTERLVL<3]: <<BoxStyle>> %NAME%
 ItemDisplay[RARE WP4 !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE%[%TAN%%PRICE%%WHITE%]
@@ -551,6 +551,7 @@ ItemDisplay[MAG SOR !ID FILTERLVL>2 PRICE>24999]: <<BoxStyle>> %WHITE[%TAN%%PRIC
 ItemDisplay[MAG WEAPON !ID]:
 
 ////Non-Magic
+ItemDisplay[NMAG SOCKETS=1 FILTERLVL>1]:
 ItemDisplay[NMAG(NORMAL) !CIRC !STORAGE(STASH) FILTERLVL=5]:
 ItemDisplay[NMAG(!ELITE) !CIRC !STORAGE(STASH) FILTERLVL=6]:
 //Styling for white items
